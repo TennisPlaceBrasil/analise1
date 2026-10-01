@@ -1,0 +1,44 @@
+name: Coletar preços e publicar painel
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 9 * * *'
+  push:
+    branches: [main]
+    paths: ['coletor.mjs', 'run-collection.mjs', 'config.json', 'public/**', '.github/workflows/coletar-precos.yml']
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: painel-precos
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verificar lógica do coletor
+        run: node --test coletor.test.mjs
+      - name: Consultar preços reais
+        run: node run-collection.mjs
+      - name: Sincronizar configuração pública
+        run: cp config.json public/config.json
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Publicar painel
+        id: deploy
+        uses: actions/deploy-pages@v4

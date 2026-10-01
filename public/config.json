@@ -1,0 +1,173 @@
+{
+  "sheetId": "1oi7gir3KQhlBx3L123Usbd6xfOhcilrQ",
+  "sheetGid": null,
+  "marketEndpoint": "",
+  "maxPagesPerBrand": 20,
+  "suppliers": [
+    {
+      "brand": "ADIDAS",
+      "markup": 2,
+      "url": "https://www.adidas.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "ASICS",
+      "markup": 2,
+      "url": "https://www.asics.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "CONVERSE",
+      "markup": 2.1,
+      "url": "https://converse.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "ECKO",
+      "markup": 2.4,
+      "url": "https://www.eckoshop.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "COCA COLA",
+      "markup": 2.4,
+      "url": "https://cocacolashoes.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "FILA",
+      "markup": 2.3,
+      "url": "https://www.fila.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "HOKA",
+      "markup": 2.2,
+      "url": "https://www.hokabrasil.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "KENNER",
+      "markup": 2.25,
+      "url": "https://www.kenner.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "LYND",
+      "markup": 2.35,
+      "url": "https://www.lynd.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "MORMAII",
+      "markup": 2.4,
+      "url": "https://www.mormaiishop.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "WEST COAST",
+      "markup": 2.4,
+      "url": null,
+      "currency": null
+    },
+    {
+      "brand": "NEW BALANCE",
+      "markup": 2.2,
+      "url": "https://www.newbalance.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "UMBRO",
+      "markup": 2.2,
+      "url": "https://www.umbro.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "OLYMPIKUS",
+      "markup": 2.25,
+      "url": "https://www.olympikus.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "MIZUNO",
+      "markup": 2.25,
+      "url": "https://www.mizuno.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "UNDER ARMOUR",
+      "markup": 2.25,
+      "url": "https://www.underarmour.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "ON RUNNING",
+      "markup": 2.15,
+      "url": "https://www.on.com/pt-br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "PUMA",
+      "markup": 2.2,
+      "url": "https://br.puma.com/",
+      "currency": null
+    },
+    {
+      "brand": "RED NOSE",
+      "markup": 2.5,
+      "url": "https://www.rednose.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "brand": "EVERLAST",
+      "markup": 2.5,
+      "url": "https://www.everlast.com/",
+      "currency": null
+    },
+    {
+      "brand": "SKECHERS",
+      "markup": 2.3,
+      "url": "https://www.skechers.com.br/",
+      "currency": "BRL"
+    }
+  ],
+  "marketplaces": [
+    {
+      "name": "Mercado Livre",
+      "url": "https://www.mercadolivre.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "name": "Netshoes",
+      "url": "https://www.netshoes.com.br/",
+      "currency": "BRL"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Centauro",
+      "url": "https://www.centauro.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "name": "W Tennis",
+      "url": "https://www.wtennis.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "name": "Flávios",
+      "url": "https://www.flavios.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "name": "B2 Online",
+      "url": "https://www.b2online.com.br/",
+      "currency": "BRL"
+    },
+    {
+      "name": "Decathlon",
+      "url": "https://www.decathlon.com.br/",
+      "currency": "BRL"
+    }
+  ]
+}
