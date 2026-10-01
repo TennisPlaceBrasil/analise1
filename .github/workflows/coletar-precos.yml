@@ -1,11 +1,16 @@
 name: Coletar preços e publicar painel
 on:
   workflow_dispatch:
+    inputs:
+      retailer_pilot:
+        description: 'Testar CORRE 5 U em Netshoes e Centauro (até 8 páginas Firecrawl)'
+        type: boolean
+        default: false
   schedule:
     - cron: '23 9 * * *'
   push:
     branches: [main]
-    paths: ['coletor.mjs', 'run-collection.mjs', 'config.json', 'public/**', '.github/workflows/coletar-precos.yml']
+    paths: ['coletor.mjs', 'coletor.test.mjs', 'retailer-pilot.mjs', 'retailer-pilot.test.mjs', 'run-collection.mjs', 'config.json', 'public/**', '.github/workflows/coletar-precos.yml']
 permissions:
   contents: read
   pages: write
@@ -23,9 +28,12 @@ jobs:
         with:
           node-version: '22'
       - name: Verificar lógica do coletor
-        run: node --test coletor.test.mjs
+        run: node --test coletor.test.mjs retailer-pilot.test.mjs
       - name: Consultar preços reais
         run: node run-collection.mjs
+        env:
+          RETAILER_PILOT: ${{ github.event_name == 'workflow_dispatch' && inputs.retailer_pilot }}
+          FIRECRAWL_API_KEY: ${{ github.event_name == 'workflow_dispatch' && inputs.retailer_pilot && secrets.FIRECRAWL_API_KEY || '' }}
       - name: Sincronizar configuração pública
         run: cp config.json public/config.json
       - uses: actions/upload-pages-artifact@v3

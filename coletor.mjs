@@ -16,8 +16,8 @@ export function matches(product,brand,group){
   const pos=title.findIndex((_,i)=>query.every((t,j)=>title[i+j]===t));
   if(pos<0)return false;
   // Evita versões adicionais comuns; matcher conservador pode deixar modelos sem resultado.
-  const extra=title.slice(pos+query.length);
-  if(extra.some(t=>['CARBON','MAX','TRAIL','GTX','GORE','INFANTIL','KIDS','JUNIOR','PRO','SE','SL'].includes(t)&&!query.includes(t)))return false;
+  const extra=[...title.slice(0,pos),...title.slice(pos+query.length)];
+  if(extra.some(t=>['CARBON','MAX','TRAIL','GTX','GORE','INFANTIL','KIDS','JUNIOR','PRO','SE','SL','VANDERLEI'].includes(t)&&!query.includes(t)))return false;
   const sex=norm(group).split(' ').at(-1);
   if(sex==='F'&&title.includes('MASCULINO')&&!title.includes('UNISSEX'))return false;
   if(sex==='M'&&title.includes('FEMININO')&&!title.includes('UNISSEX'))return false;

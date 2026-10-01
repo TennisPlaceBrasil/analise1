@@ -51,3 +51,18 @@ O GitHub Pages hospeda o painel; ele não executa esse servidor. Não coloque to
 - https://developers.vtex.com/docs/api-reference/search-api
 - https://developers.vtex.com/docs/guides/how-search-parameters-work
 - https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+# Piloto Netshoes e Centauro
+
+As páginas dessas duas lojas retornaram HTTP 403 quando consultadas diretamente pelo runner do GitHub. A API de marketplace da Netshoes é voltada à operação de vendedores e não foi usada como fonte pública de preços concorrentes.
+
+Foi preparado um caminho opcional de leitura de páginas com Firecrawl v2. **Ainda não validado nessas lojas**: precisa de uma credencial e de uma execução real. Não há garantia de acesso nem de oferta estruturada disponível. Nenhum preço é inferido por IA ou obtido de trechos de pesquisa.
+
+1. Crie uma conta em https://www.firecrawl.dev/ e obtenha a API key no painel. Use o plano gratuito para este teste; verifique a cota atual na conta.
+2. Neste repositório, abra Settings → Secrets and variables → Actions → New repository secret.
+3. Nome: `FIRECRAWL_API_KEY`. Valor: a chave da sua conta. Não publique a chave no código, HTML ou chat.
+4. Abra Actions → Coletar preços e publicar painel → Run workflow. Marque `retailer_pilot` e execute em `main`.
+5. Após a publicação, abra o agrupador `OLYMPIKUS / CORRE 5 U` no painel e confira preços, datas, condições e diagnóstico por fonte.
+
+O piloto consulta uma página de busca e até três páginas de produto por loja, total máximo de oito chamadas de scrape, sem retries. Só aceita JSON-LD Product/Offer com marca declarada, modelo comparável, BRL, preço positivo, estoque declarado e domínio da loja. Exclui Corre 5 Vanderlei, acessórios, itens usados e preços agregados sem oferta específica. A cobertura é parcial, sem garantia do menor preço de todo o site.
+
+Sem a chave ou sem marcar a opção manual, a coleta habitual continua. A chave só é passada ao processo durante uma execução manual do piloto. As execuções por push e agendamento não usam Firecrawl nem consomem sua cota. O botão do painel continua carregando a coleta publicada; consultas imediatas pelo clique ainda dependem de hospedar o servidor `/consultar`.
