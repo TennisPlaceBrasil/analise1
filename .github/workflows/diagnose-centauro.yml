@@ -1,0 +1,27 @@
+name: Diagnosticar preços da Centauro
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verificar script
+        run: node --check diagnose-centauro.mjs
+      - name: Ler duas páginas públicas da Centauro
+        run: node diagnose-centauro.mjs
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+      - name: Guardar diagnóstico para análise
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: centauro-diagnostics
+          path: centauro-diagnostics
+          retention-days: 1
