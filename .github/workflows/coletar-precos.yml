@@ -10,7 +10,7 @@ on:
     - cron: '23 9 * * *'
   push:
     branches: [main]
-    paths: ['coletor.mjs', 'coletor.test.mjs', 'retailer-pilot.mjs', 'retailer-pilot.test.mjs', 'run-collection.mjs', 'config.json', 'public/**', '.github/workflows/coletar-precos.yml']
+    paths: ['coletor.mjs', 'coletor.test.mjs', 'retailer-pilot.mjs', 'retailer-pilot.test.mjs', 'retailer-cache.mjs', 'retailer-cache.test.mjs', 'data/**', 'run-collection.mjs', 'config.json', 'public/**', '.github/workflows/coletar-precos.yml']
 permissions:
   contents: read
   pages: write
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verificar lógica do coletor
-        run: node --test coletor.test.mjs retailer-pilot.test.mjs
+        run: node --test coletor.test.mjs retailer-pilot.test.mjs retailer-cache.test.mjs
       - name: Consultar preços reais
         run: node run-collection.mjs
         env:

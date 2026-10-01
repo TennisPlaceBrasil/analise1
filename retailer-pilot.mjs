@@ -10,6 +10,39 @@ function nodes(value,out=[]){
   return out;
 }
 function localURL(value,base){try{const u=new URL(value,base),b=new URL(base);return u.protocol==='https:'&&u.hostname.replace(/^www\./,'')===b.hostname.replace(/^www\./,'')?u.href:null}catch{return null}}
+export function centauroOffers(html,source,brand,group,pageURL,checkedAt=new Date().toISOString()){
+  if(new URL(source.url).hostname.replace(/^www\./,'')!=='centauro.com.br')return [];
+  const script=html.match(/<script\b[^>]*id\s*=\s*["']__NEXT_DATA__["'][^>]*>([\s\S]*?)<\/script>/i);
+  if(!script)return [];
+  let data;try{data=JSON.parse(script[1])}catch{return []}
+  const out=[],seen=new Set();
+  const add=(p,price,currency,url,sku,seller,condition)=>{
+    if(currency!=='BRL'||!Number.isFinite(Number(price))||Number(price)<=0)return;
+    if(!matches({brand:p.brand,productName:p.name},brand,group)||!norm(p.name).split(' ').includes('TENIS'))return;
+    const link=localURL(url,source.url);if(!link)return;
+    const id=link+'|'+sku+'|'+seller+'|'+price;if(seen.has(id))return;seen.add(id);
+    out.push({source:source.name,category:source.category,seller,title:p.name,sku:sku||'',price:Number(price),currency:'BRL',url:link,checkedAt,match:true,evidence:'merchant_embedded_json',condition});
+  };
+  for(const block of Object.values(data.props?.pageProps?.fallback||{})){
+    // Resultado de busca: usa o preço do cartão específico, nunca lowPrice/highPrice.
+    for(const p of block?.products||[]){
+      if(p.status!=='available'||p.seo?.aggregateOffer?.availability!=='InStock')continue;
+      add({name:p.name,brand:p.details?.brand},p.price,p.seo?.aggregateOffer?.priceCurrency,p.url,p.id,p.details?.sellerName||source.name,'Preço anunciado no resultado da loja; disponibilidade declarada. Frete e condições de pagamento devem ser conferidos na oferta.');
+    }
+    // Página de produto: cada tamanho tem seu próprio preço e estoque.
+    const p=block?.product;if(!p||p.isAvailable!==true||p.hasStock!==true)continue;
+    const currency=block.seo?.schema?.product?.aggregateOffer?.priceCurrency;
+    for(const size of p.sizes||[]){
+      if(size.hasStock!==true||size.isAvailable!==true)continue;
+      const price=size.priceInfos?.promotionalPrice??size.priceInfos?.price;
+      // Preserva a cor consultada, pois o endereço canônico pode omiti-la.
+      const url=localURL(pageURL,source.url);if(!url)continue;
+      add(p,price,currency,url,size.sku,size.sellerInfo?.name||source.name,'Preço do tamanho '+size.description+' na página da loja, com estoque declarado; desconto Pix e frete não incluídos.');
+    }
+  }
+  return out;
+}
+function pageOffers(html,source,brand,group,url){return [...structuredOffers(html,source,brand,group,url),...centauroOffers(html,source,brand,group,url)]}
 export function structuredOffers(html,source,brand,group,pageURL,checkedAt=new Date().toISOString()){
   const out=[],seen=new Set();
   for(const script of html.matchAll(/<script\b[^>]*type\s*=\s*["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){
@@ -60,9 +93,9 @@ export async function runRetailerPilot(result,{apiKey=process.env.FIRECRAWL_API_
     try{
       const search=new URL('/busca/olympikus-corre-5',source.url).href;
       const data=await scrape(search);pages++;
-      offers.push(...structuredOffers(data.rawHtml,source,entry.brand,entry.group,search));
+      offers.push(...pageOffers(data.rawHtml,source,entry.brand,entry.group,search));
       for(const url of productLinks(data.links||[],source,entry.brand,entry.group)){
-        const p=await scrape(url);pages++;offers.push(...structuredOffers(p.rawHtml,source,entry.brand,entry.group,url));
+        const p=await scrape(url);pages++;offers.push(...pageOffers(p.rawHtml,source,entry.brand,entry.group,url));
       }
       status=offers.length?'ok':'no_match';reason=offers.length?undefined:'Páginas consultadas sem oferta estruturada comparável em BRL e com estoque.';
     }catch(e){status=offers.length?'ok':'unavailable';reason=e.message}

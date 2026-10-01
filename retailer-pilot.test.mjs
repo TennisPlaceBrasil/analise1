@@ -1,11 +1,28 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {structuredOffers,productLinks,runRetailerPilot} from './retailer-pilot.mjs';
+import {structuredOffers,productLinks,runRetailerPilot,centauroOffers} from './retailer-pilot.mjs';
 const source={name:'Centauro',url:'https://www.centauro.com.br/',category:'competitor'};
 const url=source.url+'tenis-olympikus-corre-5.html';
 const product={'@type':'Product',brand:{name:'Olympikus'},name:'Tênis Olympikus Corre 5 Unissex',offers:{'@type':'Offer',price:599.99,priceCurrency:'BRL',availability:'https://schema.org/InStock',url}};
 const html=p=>'<script type="application/ld+json">'+JSON.stringify({'@graph':[p]})+'</script>';
 const extract=p=>structuredOffers(html(p),source,'OLYMPIKUS','CORRE 5 U',url);
+const nextHTML=fallback=>'<script id="__NEXT_DATA__" type="application/json">'+JSON.stringify({props:{pageProps:{fallback}}})+'</script>';
+test('Centauro: oferta por tamanho usa preço e estoque do produto',()=>{
+  const p={name:product.name,brand:'Olympikus',isAvailable:true,hasStock:true,seo:{schema:{product:{aggregateOffer:{priceCurrency:'BRL',lowPrice:1}}}},sizes:[{description:'40',sku:'abc40',isAvailable:true,hasStock:true,priceInfos:{price:599.99,pixDiscount:10},sellerInfo:{name:'Centauro'}},{description:'41',sku:'abc41',isAvailable:true,hasStock:false,priceInfos:{price:399.99}}]};
+  const read=v=>centauroOffers(nextHTML({p:{product:v,seo:v.seo}}),source,'OLYMPIKUS','CORRE 5 U',url);
+  const found=read(p);assert.equal(found.length,1);assert.equal(found[0].price,599.99);assert.equal(found[0].sku,'abc40');
+  assert.equal(read({...p,name:'Tênis Olympikus Corre 5 Vanderlei'}).length,0);
+  assert.equal(read({...p,hasStock:false}).length,0);
+  assert.equal(read({...p,seo:{}}).length,0);
+});
+test('Centauro: cartão deve ter moeda e disponibilidade declaradas',()=>{
+  const p={id:'abc',name:product.name,status:'available',url,price:599.88,details:{brand:'Olympikus',sellerName:'Loja parceira'},seo:{aggregateOffer:{priceCurrency:'BRL',availability:'InStock',lowPrice:1}}};
+  const read=v=>centauroOffers(nextHTML({search:{products:[v]}}),source,'OLYMPIKUS','CORRE 5 U',url);
+  assert.equal(read(p)[0].price,599.88);
+  assert.equal(read({...p,status:'unavailable'}).length,0);
+  assert.equal(read({...p,url:'https://evil.test/a'}).length,0);
+  assert.equal(read({...p,seo:{aggregateOffer:{priceCurrency:'USD',availability:'InStock'}}}).length,0);
+});
 test('preço deve estar ligado ao modelo, moeda, estoque e domínio corretos',()=>{
   assert.equal(extract(product).length,1);
   for(const patch of [{priceCurrency:'USD'},{availability:'https://schema.org/OutOfStock'},{price:0},{url:'https://evil.test/a'},{'@type':'AggregateOffer',lowPrice:200},{itemCondition:'https://schema.org/UsedCondition'}])assert.equal(extract({...product,offers:{...product.offers,...patch}}).length,0);

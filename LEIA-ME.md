@@ -66,3 +66,9 @@ Foi preparado um caminho opcional de leitura de páginas com Firecrawl v2. **Ain
 O piloto consulta uma página de busca e até três páginas de produto por loja, total máximo de oito chamadas de scrape, sem retries. Só aceita JSON-LD Product/Offer com marca declarada, modelo comparável, BRL, preço positivo, estoque declarado e domínio da loja. Exclui Corre 5 Vanderlei, acessórios, itens usados e preços agregados sem oferta específica. A cobertura é parcial, sem garantia do menor preço de todo o site.
 
 Sem a chave ou sem marcar a opção manual, a coleta habitual continua. A chave só é passada ao processo durante uma execução manual do piloto. As execuções por push e agendamento não usam Firecrawl nem consomem sua cota. O botão do painel continua carregando a coleta publicada; consultas imediatas pelo clique ainda dependem de hospedar o servidor `/consultar`.
+
+## Ajuste Centauro e preservação de consultas
+
+A Centauro usa preços por cartão e por tamanho dentro do bloco público `__NEXT_DATA__`. O adaptador lê os campos específicos desse bloco, com marca/modelo, moeda e disponibilidade, sem tratar lowPrice/highPrice como uma oferta individual. O diagnóstico de 01/10/2026 validou a leitura de 25 cartões de busca comparáveis e 13 preços por tamanho na página de produto. A cobertura continua parcial.
+
+O painel preserva as últimas ofertas Netshoes/Centauro entre publicações, mantendo a data original e indicando última coleta publicada. A consulta salva expira após sete dias. A coleta habitual tenta carregar `retailer-cache.json` da publicação anterior; na primeira publicação usa o arquivo de dados do repositório extraído dos artefatos de consultas reais. O piloto manual substitui essas ofertas por sua nova consulta. O botão do painel carrega resultados publicados; ainda não faz nova consulta Firecrawl ao clicar.
