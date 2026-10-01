@@ -1,0 +1,4 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+await mkdir('diagnostics',{recursive:true});
+const urls=[['netshoes-search','https://www.netshoes.com.br/busca/olympikus-corre-5'],['centauro-search','https://www.centauro.com.br/busca/olympikus-corre-5'],['netshoes-product','https://www.netshoes.com.br/p/tenis-olympikus-corre-5-SE7-0803-026?sellerId=14569'],['centauro-product','https://www.centauro.com.br/tenis-de-corrida-unissex-olympikus-corre-5-9974A7.html?cor=03']];
+for(const [name,url]of urls){try{const r=await fetch(url,{headers:{Accept:'text/html'},signal:AbortSignal.timeout(25000)});const html=await r.text();await writeFile(`diagnostics/${name}.html`,html);const scripts=[...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)].map(m=>({attrs:m[1],size:m[2].length}));console.log(JSON.stringify({name,status:r.status,url:r.url,bytes:html.length,scripts}));}catch(e){console.log(JSON.stringify({name,error:e.message}))}}
