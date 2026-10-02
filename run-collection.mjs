@@ -1,8 +1,9 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {collectAll} from './coletor.mjs';
-import {runRetailerPilot} from './retailer-pilot.mjs';
+import {runRetailerPilot,batchTargets} from './retailer-pilot.mjs';
 import {retailerCache,mergeRetailerCache} from './retailer-cache.mjs';
 await mkdir('public',{recursive:true});
+if(process.env.RETAILER_PILOT==='true'&&process.env.RETAILER_BATCH==='true')throw Error('Escolha somente uma opção: piloto Corre 5 ou lote de agrupadores.');
 let status;
 try {
   const config=JSON.parse(await readFile('config.json','utf8'));
@@ -15,10 +16,12 @@ try {
   if(!cache)try{cache=JSON.parse(await readFile('data/retailer-cache.json','utf8'))}catch{}
   mergeRetailerCache(result,cache);
   if(process.env.RETAILER_PILOT==='true')await runRetailerPilot(result);
+  if(process.env.RETAILER_BATCH==='true')await runRetailerPilot(result,{batch:true,targetKeys:batchTargets(result,process.env.RETAILER_BRAND||'OLYMPIKUS')});
   await writeFile('public/retailer-cache.json',JSON.stringify(retailerCache(result)));
   const offers=Object.values(result.groups).reduce((n,g)=>n+g.offers.length,0);
   await writeFile('public/prices.json',JSON.stringify(result));
   status={state:offers?'partial':'error',checkedAt:new Date().toISOString(),offers,message:offers?'Coleta executada. Confira as fontes indisponíveis e a data das ofertas.':'A coleta não encontrou ofertas válidas. Consulte o resultado por fonte.'};
+  if(result.retailerBatch)status.retailerBatch=result.retailerBatch;
 }catch(e){status={state:'error',checkedAt:new Date().toISOString(),offers:0,message:e.message};}
 await writeFile('public/collection-status.json',JSON.stringify(status));
 console.log(JSON.stringify(status));

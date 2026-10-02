@@ -73,13 +73,22 @@ export function productLinks(links,source,brand,group){
     return !/\/busca\//.test(path)&&(/\/p\//.test(path)||/\.html$/.test(path))&&query.every(w=>words.includes(w))&&!words.includes('VANDERLEI');
   }).slice(0,3);
 }
-export async function runRetailerPilot(result,{apiKey=process.env.FIRECRAWL_API_KEY,fetchImpl=fetch}={}){
-  const id=key('OLYMPIKUS','CORRE 5 U'),entry=result.groups[id];
-  if(!entry){result.warnings.push('Piloto: CORRE 5 U não encontrado na planilha.');return result}
-  if(!apiKey){result.warnings.push('Piloto não executado: configure FIRECRAWL_API_KEY nos Secrets do GitHub.');return result}
+export function batchTargets(result,brand='OLYMPIKUS'){
+  const age=g=>Math.max(0,...g.sources.filter(s=>['Netshoes','Centauro'].includes(s.source)&&Number.isInteger(s.pages)).map(s=>Date.parse(s.checkedAt)||0));
+  return Object.entries(result.groups)
+    // Nesta fase, amplia apenas os agrupadores identificados como tênis no catálogo.
+    .filter(([,g])=>norm(g.brand)===norm(brand)&&g.offers.some(o=>norm(o.title).split(' ').includes('TENIS')))
+    .sort((a,b)=>age(a[1])-age(b[1])||a[1].group.localeCompare(b[1].group,'pt-BR'))
+    .slice(0,5).map(([id])=>id);
+}
+export async function runRetailerPilot(result,{apiKey=process.env.FIRECRAWL_API_KEY,fetchImpl=fetch,targetKeys=[key('OLYMPIKUS','CORRE 5 U')],batch=false}={}){
+  const targets=targetKeys.map(id=>result.groups[id]).filter(Boolean).slice(0,batch?5:1);
+  result.retailerBatch={mode:batch?'batch':'pilot',groups:[],calls:0};
+  if(!targets.length){result.retailerBatch.message='Nenhum agrupador de tênis elegível para esta marca na coleta de catálogo.';result.warnings.push(result.retailerBatch.message);return result}
+  if(!apiKey){result.retailerBatch.message='Consulta não executada: configure FIRECRAWL_API_KEY nos Secrets do GitHub.';result.warnings.push(result.retailerBatch.message);return result}
   let calls=0;
   const scrape=async url=>{
-    if(++calls>8)throw Error('Limite de 8 páginas do piloto atingido');
+    if(++calls>(batch?10:8))throw Error('Limite de páginas desta execução atingido');
     const r=await fetchImpl('https://api.firecrawl.dev/v2/scrape',{method:'POST',headers:{Authorization:'Bearer '+apiKey,'Content-Type':'application/json'},body:JSON.stringify({url,formats:['rawHtml','links'],onlyMainContent:false,maxAge:0,timeout:45000,location:{country:'BR',languages:['pt-BR']}}),signal:AbortSignal.timeout(55000)});
     // Não registra resposta/URL da API ou credenciais nos logs públicos.
     if(!r.ok)throw Error('Serviço de leitura: HTTP '+r.status);
@@ -88,13 +97,14 @@ export async function runRetailerPilot(result,{apiKey=process.env.FIRECRAWL_API_
     if(d.metadata?.url&&!localURL(d.metadata.url,url))throw Error('Página redirecionada para outro domínio');
     return d;
   };
-  for(const source of [{name:'Netshoes',url:'https://www.netshoes.com.br/',category:'marketplace'},{name:'Centauro',url:'https://www.centauro.com.br/',category:'competitor'}]){
+  for(const entry of targets)for(const source of [{name:'Netshoes',url:'https://www.netshoes.com.br/',category:'marketplace'},{name:'Centauro',url:'https://www.centauro.com.br/',category:'competitor'}]){
     let offers=[],reason,status='no_match',pages=0;
     try{
-      const search=new URL('/busca/olympikus-corre-5',source.url).href;
+      const term=norm(entry.brand+' '+entry.group.replace(/\s+[MFU]$/i,'')).toLowerCase().replaceAll(' ','-');
+      const search=new URL('/busca/'+term,source.url).href;
       const data=await scrape(search);pages++;
       offers.push(...pageOffers(data.rawHtml,source,entry.brand,entry.group,search));
-      for(const url of productLinks(data.links||[],source,entry.brand,entry.group)){
+      for(const url of batch?[]:productLinks(data.links||[],source,entry.brand,entry.group)){
         const p=await scrape(url);pages++;offers.push(...pageOffers(p.rawHtml,source,entry.brand,entry.group,url));
       }
       status=offers.length?'ok':'no_match';reason=offers.length?undefined:'Páginas consultadas sem oferta estruturada comparável em BRL e com estoque.';
@@ -103,8 +113,9 @@ export async function runRetailerPilot(result,{apiKey=process.env.FIRECRAWL_API_
     entry.offers.push(...[...new Map(offers.map(o=>[o.url+'|'+o.price,o])).values()]);
     entry.sources=entry.sources.filter(s=>s.source!==source.name);
     entry.sources.push({source:source.name,category:source.category,status,reason,truncated:true,pages,checkedAt:new Date().toISOString()});
-    console.log(source.name+': piloto '+status+' ('+pages+' páginas)');
+    console.log(entry.brand+'/'+entry.group+' · '+source.name+': '+status+' ('+pages+' páginas)');
   }
-  result.warnings.push('Piloto manual limitado a CORRE 5 U, Netshoes e Centauro, até 8 páginas. Demais agrupadores usam a coleta de catálogo.');
+  result.warnings.push(batch?'Lote manual: até 5 agrupadores de tênis e 10 páginas de busca. Cobertura parcial.':'Piloto manual limitado a CORRE 5 U, Netshoes e Centauro, até 8 páginas. Demais agrupadores usam a coleta de catálogo.');
+  result.retailerBatch={mode:batch?'batch':'pilot',groups:targets.map(g=>({brand:g.brand,group:g.group})),calls};
   return result;
 }

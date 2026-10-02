@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {structuredOffers,productLinks,runRetailerPilot,centauroOffers} from './retailer-pilot.mjs';
+import {structuredOffers,productLinks,runRetailerPilot,centauroOffers,batchTargets} from './retailer-pilot.mjs';
 const source={name:'Centauro',url:'https://www.centauro.com.br/',category:'competitor'};
 const url=source.url+'tenis-olympikus-corre-5.html';
 const product={'@type':'Product',brand:{name:'Olympikus'},name:'Tênis Olympikus Corre 5 Unissex',offers:{'@type':'Offer',price:599.99,priceCurrency:'BRL',availability:'https://schema.org/InStock',url}};
@@ -45,4 +45,28 @@ test('resposta 403 não produz oferta e não publica dados da credencial',async(
   assert.equal(result.groups['OLYMPIKUS|CORRE 5 U'].offers.length,0);
   assert.equal(result.groups['OLYMPIKUS|CORRE 5 U'].sources[0].status,'unavailable');
   assert.equal(JSON.stringify(result).includes('secret-test'),false);
+});
+test('lote prioriza tênis sem consulta e mantém a consulta mais recente fora da fila',()=>{
+  const result={groups:{}};
+  for(let i=1;i<=7;i++)result.groups['g'+i]={brand:'OLYMPIKUS',group:'CORRE '+i+' U',offers:[{title:'Tênis Olympikus Corre '+i}],sources:[]};
+  result.groups.g1.sources=[{source:'Netshoes',pages:1,checkedAt:'2026-10-01T21:00:00Z'}];
+  result.groups.roupa={brand:'OLYMPIKUS',group:'CAMISETA M',offers:[{title:'Camiseta Olympikus'}],sources:[]};
+  result.groups.asics={brand:'ASICS',group:'JOLT 5 U',offers:[{title:'Tênis Asics Jolt 5'}],sources:[]};
+  const targets=batchTargets(result);assert.equal(targets.length,5);assert.equal(targets.includes('g1'),false);assert.equal(targets.includes('roupa'),false);assert.equal(targets.includes('asics'),false);
+});
+test('lote limita o gasto a 10 páginas de busca e não apaga outros agrupadores',async()=>{
+  const result={groups:{},warnings:[]};
+  for(let i=1;i<=8;i++)result.groups['g'+i]={brand:'OLYMPIKUS',group:'CORRE '+i+' U',offers:[{source:'OLYMPIKUS',title:'Tênis Olympikus Corre '+i,price:500}],sources:[]};
+  let calls=0;
+  const fake=async(endpoint,options)=>{
+    calls++;const request=JSON.parse(options.body),page=new URL(request.url);assert.equal(page.pathname.startsWith('/busca/'),true);
+    const name='Tênis Olympikus '+page.pathname.replace('/busca/olympikus-','').replaceAll('-',' ');
+    const p={...product,name,offers:{...product.offers,url:page.origin+'/p/'+page.pathname.split('/').at(-1)}};
+    return {ok:true,json:async()=>({success:true,data:{rawHtml:html(p),links:[page.origin+'/p/olympikus-corre-1']}})};
+  };
+  await runRetailerPilot(result,{batch:true,targetKeys:Object.keys(result.groups),apiKey:'test-secret',fetchImpl:fake});
+  assert.equal(calls,10);assert.equal(result.retailerBatch.groups.length,5);
+  for(let i=1;i<=5;i++){assert.equal(result.groups['g'+i].sources.length,2);assert.equal(result.groups['g'+i].offers.filter(o=>o.source!=='OLYMPIKUS').length,2)}
+  assert.equal(result.groups.g6.offers.length,1);assert.equal(result.groups.g6.sources.length,0);
+  assert.equal(JSON.stringify(result).includes('test-secret'),false);
 });

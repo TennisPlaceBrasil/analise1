@@ -72,3 +72,11 @@ Sem a chave ou sem marcar a opção manual, a coleta habitual continua. A chave 
 A Centauro usa preços por cartão e por tamanho dentro do bloco público `__NEXT_DATA__`. O adaptador lê os campos específicos desse bloco, com marca/modelo, moeda e disponibilidade, sem tratar lowPrice/highPrice como uma oferta individual. O diagnóstico de 01/10/2026 validou a leitura de 25 cartões de busca comparáveis e 13 preços por tamanho na página de produto. A cobertura continua parcial.
 
 O painel preserva as últimas ofertas Netshoes/Centauro entre publicações, mantendo a data original e indicando última coleta publicada. A consulta salva expira após sete dias. A coleta habitual tenta carregar `retailer-cache.json` da publicação anterior; na primeira publicação usa o arquivo de dados do repositório extraído dos artefatos de consultas reais. O piloto manual substitui essas ofertas por sua nova consulta. O botão do painel carrega resultados publicados; ainda não faz nova consulta Firecrawl ao clicar.
+
+## Lotes de agrupadores de tênis
+
+Em Actions → Coletar preços e publicar painel → Run workflow, deixe `retailer_pilot` desmarcado e marque `retailer_batch`. Mantenha a marca `OLYMPIKUS` para o primeiro lote. Pode informar outra marca que tenha agrupadores identificados como tênis nas ofertas de catálogo já coletadas.
+
+Cada execução escolhe até cinco agrupadores dessa marca, priorizando os sem consulta de Netshoes/Centauro e depois os consultados há mais tempo. Faz uma leitura da página de busca por loja/agrupador, no máximo dez chamadas Firecrawl; não segue páginas de produto neste modo. A cobertura pode ser menor que a do piloto detalhado. O painel informa o lote consultado. As ofertas das demais consultas são preservadas com a data original, até sete dias.
+
+Esta etapa amplia apenas tênis já identificados no catálogo, sem afirmar cobertura de toda a planilha ou de todos os sites. Vestuário, marcas com catálogo indisponível, demais concorrentes/marketplaces e consulta imediata pelo botão continuam pendentes. Lotes só são executados manualmente e não se iniciam por push ou agendamento. Não marque as duas opções de coleta ao mesmo tempo.

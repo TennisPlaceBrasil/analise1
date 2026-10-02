@@ -6,6 +6,14 @@ on:
         description: 'Testar CORRE 5 U em Netshoes e Centauro (até 8 páginas Firecrawl)'
         type: boolean
         default: false
+      retailer_batch:
+        description: 'Consultar próximo lote de 5 agrupadores de tênis (até 10 páginas Firecrawl)'
+        type: boolean
+        default: false
+      retailer_brand:
+        description: 'Marca do lote de tênis'
+        type: string
+        default: 'OLYMPIKUS'
   schedule:
     - cron: '23 9 * * *'
   push:
@@ -33,7 +41,9 @@ jobs:
         run: node run-collection.mjs
         env:
           RETAILER_PILOT: ${{ github.event_name == 'workflow_dispatch' && inputs.retailer_pilot }}
-          FIRECRAWL_API_KEY: ${{ github.event_name == 'workflow_dispatch' && inputs.retailer_pilot && secrets.FIRECRAWL_API_KEY || '' }}
+          RETAILER_BATCH: ${{ github.event_name == 'workflow_dispatch' && inputs.retailer_batch }}
+          RETAILER_BRAND: ${{ inputs.retailer_brand || 'OLYMPIKUS' }}
+          FIRECRAWL_API_KEY: ${{ github.event_name == 'workflow_dispatch' && (inputs.retailer_pilot || inputs.retailer_batch) && secrets.FIRECRAWL_API_KEY || '' }}
       - name: Sincronizar configuração pública
         run: cp config.json public/config.json
       - uses: actions/upload-pages-artifact@v3
