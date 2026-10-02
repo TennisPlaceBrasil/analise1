@@ -1,7 +1,7 @@
 {
   "sheetId": "1oi7gir3KQhlBx3L123Usbd6xfOhcilrQ",
   "sheetGid": null,
-  "marketEndpoint": "",
+  "marketEndpoint": "https://analise1.onrender.com/consultar",
   "maxPagesPerBrand": 20,
   "suppliers": [
     {
