@@ -1,51 +1,47 @@
-name: Coletar preços e publicar painel
+name: Processar fila solicitada e publicar painel
 on:
   workflow_dispatch:
-    inputs:
-      retailer_pilot:
-        description: 'Testar CORRE 5 U em Netshoes e Centauro (até 8 páginas Firecrawl)'
-        type: boolean
-        default: false
-      retailer_batch:
-        description: 'Consultar próximo lote de 5 agrupadores de tênis (até 10 páginas Firecrawl)'
-        type: boolean
-        default: false
-      retailer_brand:
-        description: 'Marca do lote de tênis'
-        type: string
-        default: 'OLYMPIKUS'
+  issues:
+    types: [opened]
   schedule:
-    - cron: '23 9 * * *'
+    - cron: '23 * * * *'
   push:
     branches: [main]
-    paths: ['coletor.mjs', 'coletor.test.mjs', 'retailer-pilot.mjs', 'retailer-pilot.test.mjs', 'retailer-cache.mjs', 'retailer-cache.test.mjs', 'data/**', 'run-collection.mjs', 'config.json', 'public/**', '.github/workflows/coletar-precos.yml']
+    paths: ['*.mjs', 'config.json', 'public/**', '.github/workflows/coletar-precos.yml']
 permissions:
   contents: read
   pages: write
   id-token: write
+  issues: write
 concurrency:
   group: painel-precos
   cancel-in-progress: false
 jobs:
   collect:
+    if: github.event_name != 'issues' || (startsWith(github.event.issue.title, '[Pesquisa TP] ') && (github.event.issue.author_association == 'OWNER' || github.event.issue.author_association == 'MEMBER' || github.event.issue.author_association == 'COLLABORATOR'))
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verificar lógica do coletor
-        run: node --test coletor.test.mjs retailer-pilot.test.mjs retailer-cache.test.mjs
-      - name: Consultar preços reais
+      - name: Verificar coletor e fila
+        run: node --test coletor.test.mjs retailer-pilot.test.mjs retailer-cache.test.mjs request-queue.test.mjs run-collection.test.mjs
+      - name: Preservar resultados e processar solicitações
         run: node run-collection.mjs
         env:
-          RETAILER_PILOT: ${{ github.event_name == 'workflow_dispatch' && inputs.retailer_pilot }}
-          RETAILER_BATCH: ${{ github.event_name == 'workflow_dispatch' && inputs.retailer_batch }}
-          RETAILER_BRAND: ${{ inputs.retailer_brand || 'OLYMPIKUS' }}
-          FIRECRAWL_API_KEY: ${{ github.event_name == 'workflow_dispatch' && (inputs.retailer_pilot || inputs.retailer_batch) && secrets.FIRECRAWL_API_KEY || '' }}
-      - name: Sincronizar configuração pública
-        run: cp config.json public/config.json
+          PROCESS_QUEUE: ${{ github.event_name != 'push' }}
+          FIRECRAWL_API_KEY: ${{ github.event_name != 'push' && secrets.FIRECRAWL_API_KEY || '' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: cp config.json public/config.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: processed-requests
+          path: processed-requests.json
+          retention-days: 1
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
@@ -60,3 +56,16 @@ jobs:
       - name: Publicar painel
         id: deploy
         uses: actions/deploy-pages@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          name: processed-requests
+      - name: Concluir solicitações publicadas
+        run: node finish-requests.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

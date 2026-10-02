@@ -67,7 +67,7 @@ export function structuredOffers(html,source,brand,group,pageURL,checkedAt=new D
   return out;
 }
 export function productLinks(links,source,brand,group){
-  const query=norm(brand+' '+group.replace(/\s+[MFU]$/i,'')).split(' ');
+  const query=norm(brand+' '+norm(group).replace(/\s+[MFU]$/i,'')).split(' ');
   return [...new Set(links.map(v=>localURL(v,source.url)).filter(Boolean))].filter(url=>{
     const path=decodeURI(new URL(url).pathname),words=norm(path).split(' ');
     return !/\/busca\//.test(path)&&(/\/p\//.test(path)||/\.html$/.test(path))&&query.every(w=>words.includes(w))&&!words.includes('VANDERLEI');
@@ -100,7 +100,7 @@ export async function runRetailerPilot(result,{apiKey=process.env.FIRECRAWL_API_
   for(const entry of targets)for(const source of [{name:'Netshoes',url:'https://www.netshoes.com.br/',category:'marketplace'},{name:'Centauro',url:'https://www.centauro.com.br/',category:'competitor'}]){
     let offers=[],reason,status='no_match',pages=0;
     try{
-      const term=norm(entry.brand+' '+entry.group.replace(/\s+[MFU]$/i,'')).toLowerCase().replaceAll(' ','-');
+      const term=norm(entry.brand+' '+norm(entry.group).replace(/\s+[MFU]$/i,'')).toLowerCase().replaceAll(' ','-');
       const search=new URL('/busca/'+term,source.url).href;
       const data=await scrape(search);pages++;
       offers.push(...pageOffers(data.rawHtml,source,entry.brand,entry.group,search));
