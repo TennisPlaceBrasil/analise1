@@ -7,7 +7,7 @@ const keyNorm=v=>String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').t
 export const key=(brand,group)=>keyNorm(brand)+'|'+keyNorm(group);
 const aliases={'COCA COLA SHOES':'COCA COLA','ON':'ON RUNNING','ON RUNNING':'ON RUNNING'};
 const cleanBrand=b=>aliases[norm(b)]||norm(b);
-export function matches(product,brand,group){
+export function matches(product,brand,group,{requireGender=false}={}){
   if(cleanBrand(product.brand)!==cleanBrand(brand))return false;
   let query=norm(group).split(' ').filter(Boolean);if(['M','F','U'].includes(query.at(-1)))query.pop();
   if(!query.length)return false;
@@ -15,12 +15,18 @@ export function matches(product,brand,group){
   // Modelo e versão precisam ocorrer em sequência; códigos de fábrica não são descartados.
   const pos=title.findIndex((_,i)=>query.every((t,j)=>title[i+j]===t));
   if(pos<0)return false;
+  // Kit não é comparável ao item avulso; versão numérica adicional muda o modelo.
+  if(title.some(t=>['KIT','KITS','COMBO'].includes(t)&&!query.includes(t)))return false;
+  if(/^\d+$/.test(title[pos+query.length]||''))return false;
   // Evita versões adicionais comuns; matcher conservador pode deixar modelos sem resultado.
   const extra=[...title.slice(0,pos),...title.slice(pos+query.length)];
   if(extra.some(t=>['CARBON','MAX','TRAIL','GTX','GORE','INFANTIL','KIDS','JUNIOR','PRO','SE','SL','VANDERLEI'].includes(t)&&!query.includes(t)))return false;
   const sex=norm(group).split(' ').at(-1);
-  if(sex==='F'&&title.includes('MASCULINO')&&!title.includes('UNISSEX'))return false;
-  if(sex==='M'&&title.includes('FEMININO')&&!title.includes('UNISSEX'))return false;
+  const feminine=title.some(t=>['FEMININO','FEMININA'].includes(t)),masculine=title.some(t=>['MASCULINO','MASCULINA'].includes(t)),unisex=title.includes('UNISSEX');
+  if(sex==='F'&&masculine&&!unisex)return false;
+  if(sex==='M'&&feminine&&!unisex)return false;
+  if(requireGender&&sex==='F'&&!feminine&&!unisex)return false;
+  if(requireGender&&sex==='M'&&!masculine&&!unisex)return false;
   return true;
 }
 export function productOffers(products,source,brand,group,checkedAt=new Date().toISOString()){

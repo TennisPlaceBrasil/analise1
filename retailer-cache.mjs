@@ -14,7 +14,7 @@ export function mergeRetailerCache(result,cache,now=Date.now()){
   for(const [id,saved]of Object.entries(cache.groups)){
     const current=result.groups[id];if(!current||!Array.isArray(saved.offers)||!Array.isArray(saved.sources))continue;
     const offers=saved.offers.filter(o=>{
-      const s=sources.get(o.source);if(!s||o.category!==s.category||!evidence.has(o.evidence)||o.currency!=='BRL'||o.match!==true||!Number.isFinite(Number(o.price))||Number(o.price)<=0||!recent(o.checkedAt)||!matches({brand:saved.brand,productName:o.title},current.brand,current.group))return false;
+      const s=sources.get(o.source);if(!s||o.category!==s.category||!evidence.has(o.evidence)||o.currency!=='BRL'||o.match!==true||!Number.isFinite(Number(o.price))||Number(o.price)<=0||!recent(o.checkedAt)||!matches({brand:saved.brand,productName:o.title},current.brand,current.group,{requireGender:true}))return false;
       try{const u=new URL(o.url);return u.protocol==='https:'&&u.hostname.replace(/^www\./,'')===s.host}catch{return false}
     });
     for(const source of sources.keys()){

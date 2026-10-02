@@ -18,7 +18,7 @@ export function centauroOffers(html,source,brand,group,pageURL,checkedAt=new Dat
   const out=[],seen=new Set();
   const add=(p,price,currency,url,sku,seller,condition)=>{
     if(currency!=='BRL'||!Number.isFinite(Number(price))||Number(price)<=0)return;
-    if(!matches({brand:p.brand,productName:p.name},brand,group)||!norm(p.name).split(' ').includes('TENIS'))return;
+    if(!matches({brand:p.brand,productName:p.name},brand,group,{requireGender:true})||!norm(p.name).split(' ').includes('TENIS'))return;
     const link=localURL(url,source.url);if(!link)return;
     const id=link+'|'+sku+'|'+seller+'|'+price;if(seen.has(id))return;seen.add(id);
     out.push({source:source.name,category:source.category,seller,title:p.name,sku:sku||'',price:Number(price),currency:'BRL',url:link,checkedAt,match:true,evidence:'merchant_embedded_json',condition});
@@ -50,7 +50,7 @@ export function structuredOffers(html,source,brand,group,pageURL,checkedAt=new D
     for(const p of products){
       const pb=typeof p.brand==='string'?p.brand:p.brand?.name;
       // Nunca atribui a marca consultada a um produto sem evidência.
-      if(!pb||!matches({brand:pb,productName:p.name},brand,group))continue;
+      if(!pb||!matches({brand:pb,productName:p.name},brand,group,{requireGender:true}))continue;
       // Este piloto é de calçados; acessórios com "Corre 5" não são comparáveis.
       if(!norm(p.name).split(' ').includes('TENIS'))continue;
       for(const offer of array(p.offers)){
