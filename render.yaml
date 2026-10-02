@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: tennisplace-consulta
+    runtime: node
+    plan: free
+    buildCommand: node --test *.test.mjs
+    startCommand: node consulta-service.mjs
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: '22'
+      - key: ALLOWED_ORIGIN
+        value: https://tennisplacebrasil.github.io
+      - key: FIRECRAWL_API_KEY
+        sync: false
+      - key: ACCESS_CODE
+        sync: false
