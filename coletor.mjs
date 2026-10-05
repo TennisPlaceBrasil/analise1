@@ -54,7 +54,7 @@ function sourceList(c,brand){const supplier=c.suppliers.find(s=>cleanBrand(s.bra
 export async function collectGroup(c,brand,group){const sources=sourceList(c,brand),result={brand,group,offers:[],sources:[],checkedAt:new Date().toISOString()};
   // Ordem de consulta solicitada: fornecedor, marketplaces, concorrentes.
   for(const category of ['official','marketplace','competitor']){
-    const block=await Promise.all(sources.filter(s=>s.category===category).map(async s=>{try{const {products,truncated}=await catalog(s,norm(group).replace(/\s+[MFU]$/i,''),{pages:3});const offers=productOffers(products,s,brand,group);return {offers,status:{source:s.name,category,status:offers.length?'ok':'no_match',truncated,checkedAt:new Date().toISOString()}}}catch(e){return {offers:[],status:{source:s.name,category,status:'unavailable',reason:e.message,checkedAt:new Date().toISOString()}}}}));
+    const block=await Promise.all(sources.filter(s=>s.category===category).map(async s=>{try{const {products,truncated}=await catalog(s,norm(group).replace(/\s+[MFU]$/i,''),{pages:1});const offers=productOffers(products,s,brand,group);return {offers,status:{source:s.name,category,status:offers.length?'ok':'no_match',truncated,checkedAt:new Date().toISOString()}}}catch(e){return {offers:[],status:{source:s.name,category,status:'unavailable',reason:e.message,checkedAt:new Date().toISOString()}}}}));
     for(const r of block){result.offers.push(...r.offers);result.sources.push(r.status)}
   }
   if(!sources.some(s=>s.category==='official'))result.sources.unshift({source:brand,category:'official',status:'not_configured',reason:'Site do fornecedor não cadastrado'});

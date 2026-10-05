@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { matches, productOffers, key } from './coletor.mjs';
+import { matches, productOffers, key, collectGroup } from './coletor.mjs';
 const product={brand:'OLYMPIKUS',productName:'Tênis Olympikus Corre 5 Unissex',link:'https://www.olympikus.com.br/corre-5/p',items:[{itemId:'1',name:'Preto 40',sellers:[{sellerId:'1',sellerName:'Olympikus',commertialOffer:{Price:499.99,AvailableQuantity:3}}]}]};
 const source={name:'OLYMPIKUS',url:'https://www.olympikus.com.br/',category:'official'};
 test('marca e versão precisam corresponder',()=>{assert.equal(matches(product,'OLYMPIKUS','CORRE 5 U'),true);assert.equal(matches(product,'MIZUNO','CORRE 5 U'),false);assert.equal(matches({...product,productName:'Corre 4 Unissex'},'OLYMPIKUS','CORRE 5 U'),false);assert.equal(matches({...product,productName:'Corre 5 Carbon Unissex'},'OLYMPIKUS','CORRE 5 U'),false);assert.equal(matches({...product,productName:'Corre5 Unissex'},'OLYMPIKUS','CORRE 5 U'),true)});
@@ -19,4 +19,9 @@ test('oferta externa feminina precisa indicar gênero comparável',()=>{
   assert.equal(read('Tênis Olympikus Acqua Feminino'),true);
   assert.equal(read('Tênis Olympikus Acqua Unissex'),true);
   assert.equal(read('Tênis Olympikus Acqua Masculino'),false);
+});
+
+test('consulta do modelo oficial lê apenas uma página, mesmo com 50 produtos',async()=>{
+  const original=globalThis.fetch;let calls=0;globalThis.fetch=async url=>{calls++;assert.equal(new URL(url).searchParams.get('ft'),'CORRE 5');return Response.json(Array.from({length:50},()=>product))};
+  try{const result=await collectGroup({suppliers:[{brand:'OLYMPIKUS',url:source.url,currency:'BRL'}],marketplaces:[],competitors:[]},'OLYMPIKUS','CORRE5U');assert.equal(calls,1);assert.equal(result.sources[0].truncated,true)}finally{globalThis.fetch=original}
 });
