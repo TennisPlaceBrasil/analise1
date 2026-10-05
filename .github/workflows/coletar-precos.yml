@@ -15,7 +15,7 @@ permissions:
   issues: write
 concurrency:
   group: painel-precos
-  cancel-in-progress: false
+  cancel-in-progress: ${{ github.event_name == 'push' }}
 jobs:
   collect:
     if: github.event_name != 'issues' || (startsWith(github.event.issue.title, '[Pesquisa TP] ') && (github.event.issue.author_association == 'OWNER' || github.event.issue.author_association == 'MEMBER' || github.event.issue.author_association == 'COLLABORATOR'))
