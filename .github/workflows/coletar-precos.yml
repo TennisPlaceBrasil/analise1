@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verificar coletor e fila
-        run: node --test coletor.test.mjs retailer-pilot.test.mjs retailer-cache.test.mjs request-queue.test.mjs run-collection.test.mjs
+        run: node --test coletor.test.mjs retailer-pilot.test.mjs retailer-cache.test.mjs request-queue.test.mjs run-collection.test.mjs offer-selection.test.mjs public-ui.test.mjs
       - name: Preservar resultados e processar solicitações
         run: node run-collection.mjs
         env:
