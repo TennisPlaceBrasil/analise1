@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {structuredOffers,productLinks,runRetailerPilot,centauroOffers,batchTargets} from './retailer-pilot.mjs';
+const blockedDirect=async()=>{throw Error('Teste sem leitura direta')};
 const source={name:'Centauro',url:'https://www.centauro.com.br/',category:'competitor'};
 const url=source.url+'tenis-olympikus-corre-5.html';
 const product={'@type':'Product',brand:{name:'Olympikus'},name:'Tênis Olympikus Corre 5 Unissex',offers:{'@type':'Offer',price:599.99,priceCurrency:'BRL',availability:'https://schema.org/InStock',url}};
@@ -34,14 +35,14 @@ test('descoberta fica limitada a produtos comparáveis da própria loja',()=>{
   const links=[url,url,'https://evil.test/tenis-olympikus-corre-5.html',source.url+'busca/olympikus-corre-5',source.url+'tenis-olympikus-corre-5-vanderlei.html'];
   assert.deepEqual(productLinks(links,source,'OLYMPIKUS','CORRE 5 U'),[url]);
 });
-test('piloto sem credencial não consulta nem apaga a coleta existente',async()=>{
+test('sem credencial nem página direta não apaga a coleta existente',async()=>{
   const result={groups:{'OLYMPIKUS|CORRE 5 U':{offers:[{price:1}],sources:[]}},warnings:[]};
-  await runRetailerPilot(result,{apiKey:'',fetchImpl:()=>{throw Error('Não deve consultar')}});
+  await runRetailerPilot(result,{directFetchImpl:blockedDirect,apiKey:'',fetchImpl:()=>{throw Error('Não deve consultar')}});
   assert.equal(result.groups['OLYMPIKUS|CORRE 5 U'].offers.length,1);assert.equal(result.warnings.length,1);
 });
 test('resposta 403 não produz oferta e não publica dados da credencial',async()=>{
   const result={groups:{'OLYMPIKUS|CORRE 5 U':{brand:'OLYMPIKUS',group:'CORRE 5 U',offers:[],sources:[]}},warnings:[]};
-  await runRetailerPilot(result,{apiKey:'secret-test',fetchImpl:async()=>({ok:false,status:403})});
+  await runRetailerPilot(result,{directFetchImpl:blockedDirect,apiKey:'secret-test',fetchImpl:async()=>({ok:false,status:403})});
   assert.equal(result.groups['OLYMPIKUS|CORRE 5 U'].offers.length,0);
   assert.equal(result.groups['OLYMPIKUS|CORRE 5 U'].sources[0].status,'unavailable');
   assert.equal(JSON.stringify(result).includes('secret-test'),false);
@@ -64,9 +65,20 @@ test('lote limita o gasto a 10 páginas de busca e não apaga outros agrupadores
     const p={...product,name,offers:{...product.offers,url:page.origin+'/p/'+page.pathname.split('/').at(-1)}};
     return {ok:true,json:async()=>({success:true,data:{rawHtml:html(p),links:[page.origin+'/p/olympikus-corre-1']}})};
   };
-  await runRetailerPilot(result,{batch:true,targetKeys:Object.keys(result.groups),apiKey:'test-secret',fetchImpl:fake});
+  await runRetailerPilot(result,{directFetchImpl:blockedDirect,batch:true,targetKeys:Object.keys(result.groups),apiKey:'test-secret',fetchImpl:fake});
   assert.equal(calls,10);assert.equal(result.retailerBatch.groups.length,5);
   for(let i=1;i<=5;i++){assert.equal(result.groups['g'+i].sources.length,2);assert.equal(result.groups['g'+i].offers.filter(o=>o.source!=='OLYMPIKUS').length,2)}
   assert.equal(result.groups.g6.offers.length,1);assert.equal(result.groups.g6.sources.length,0);
   assert.equal(JSON.stringify(result).includes('test-secret'),false);
+});
+test('leitura direta retorna somente 2 Netshoes e 1 Centauro sem Firecrawl',async()=>{
+  const entry={brand:'OLYMPIKUS',group:'CORRE 5 U',offers:[],sources:[]};const result={groups:{'OLYMPIKUS|CORRE 5 U':entry},warnings:[]};let reads=0;
+  await runRetailerPilot(result,{apiKey:'',directFetchImpl:async search=>{reads++;const base=new URL(search).origin;const products=[1,2,3,4].map(i=>({...product,offers:{...product.offers,url:base+'/p/produto-'+i,price:500+i}}));return {ok:true,url:search,text:async()=>'<script type="application/ld+json">'+JSON.stringify(products)+'</script>'}},fetchImpl:()=>{throw Error('Firecrawl não deve ser chamado')}});
+  assert.equal(reads,2);assert.equal(result.retailerBatch.calls,0);assert.equal(entry.offers.filter(o=>o.source==='Netshoes').length,2);assert.equal(entry.offers.filter(o=>o.source==='Centauro').length,1);assert.ok(entry.sources.every(s=>s.method==='direct'&&s.status==='ok'));
+});
+test('falha nas duas leituras mantém preço anterior e sua data',async()=>{
+  const old={source:'Netshoes',category:'marketplace',price:400,checkedAt:'2026-10-02T00:00:00Z',url:'https://www.netshoes.com.br/p/produto'};
+  const entry={brand:'OLYMPIKUS',group:'CORRE 5 U',offers:[old],sources:[]};const result={groups:{'OLYMPIKUS|CORRE 5 U':entry},warnings:[]};
+  await runRetailerPilot(result,{directFetchImpl:blockedDirect,apiKey:'test',fetchImpl:async()=>({ok:false,status:429})});
+  assert.deepEqual(entry.offers,[old]);assert.equal(entry.sources[0].preserved,true);assert.equal(result.retailerBatch.calls,2);
 });
