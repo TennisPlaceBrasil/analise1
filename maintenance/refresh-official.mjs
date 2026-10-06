@@ -26,14 +26,14 @@ if(mode==='prepare'){
   else {
    entry=await collectGroup(c,g.brand,g.group);
    const s=entry.sources.find(s=>s.category==='official');
-   if(s?.status==='unavailable')stopped=s.reason;
+   if(s?.status==='unavailable'&&/HTTP (403|404|429)|Moeda brasileira|Formato de catálogo|Catálogo público não/.test(s.reason||''))stopped=s.reason;
   }
   entry.offers=limitOffers(entry.offers);entries[id]=entry;
   await writeFile('refresh-work/brand-'+index+'.json',JSON.stringify(entries));
  }}
  // Primeira consulta confirma se a fonte aceita a rota; evita repetir bloqueios.
  if(groups.length){cursor=0;const g=groups[cursor++];const entry=await collectGroup(c,g.brand,g.group);entries[key(g.brand,g.group)]=entry;
- const s=entry.sources.find(s=>s.category==='official');if(s?.status==='unavailable')stopped=s.reason;}
+ const s=entry.sources.find(s=>s.category==='official');if(s?.status==='unavailable'&&/HTTP (403|404|429)|Moeda brasileira|Formato de catálogo|Catálogo público não/.test(s.reason||''))stopped=s.reason;}
  await Promise.all([worker(),worker(),worker()]);
  await writeFile('refresh-work/brand-'+index+'.json',JSON.stringify(entries));
  console.log(supplier.brand+': '+groups.length+' agrupadores; '+Object.values(entries).filter(e=>e.offers.length).length+' com preço oficial.'+(stopped?' Fonte indisponível: '+stopped:''));
@@ -46,7 +46,7 @@ if(mode==='prepare'){
   const id=key(g.brand,g.group),previous=old.groups[id]||{...g,offers:[],sources:[]};
   let entry=fresh[id];
   if(!entry)entry={...g,offers:[],sources:[{source:g.brand,category:'official',status:config.suppliers.some(s=>s.brand===g.brand)?'unavailable':'not_configured',reason:'Fonte oficial não consultada ou não cadastrada.',checkedAt:report.checkedAt}]};
-  const s=entry.sources[0],failed=s?.status==='unavailable';
+  const s=entry.sources[0],failed=s?.status==='unavailable'&&/HTTP (403|404|429)|Moeda brasileira|Formato de catálogo|Catálogo público não/.test(s.reason||'');
   const preserved=failed?previous.offers.filter(o=>o.category==='official'):[];
   if(preserved.length)s.reason=(s.reason||'Consulta falhou')+'; preço anterior preservado com sua data original.';
   old.groups[id]={...previous,...g,offers:limitOffers([...previous.offers.filter(o=>o.category!=='official'),...entry.offers,...preserved]),sources:[...previous.sources.filter(s=>s.category!=='official'),...entry.sources]};
