@@ -1,0 +1,86 @@
+name: Atualizar todos os fornecedores oficiais
+on:
+  push:
+    branches: [main]
+    paths: ['maintenance/refresh-request.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: painel-precos
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.prepare.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test *.test.mjs
+      - id: prepare
+        run: node maintenance/refresh-official.mjs prepare >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: refresh-input
+          path: refresh-work
+  collect:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        include: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          name: refresh-input
+          path: refresh-work
+      - run: node maintenance/refresh-official.mjs brand ${{ matrix.index }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: official-brand-${{ matrix.index }}
+          path: refresh-work/brand-${{ matrix.index }}.json
+  publish:
+    needs: [prepare, collect]
+    if: always() && needs.prepare.result == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          name: refresh-input
+          path: refresh-work
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: official-brand-*
+          merge-multiple: true
+          path: refresh-work
+      - run: node maintenance/refresh-official.mjs merge
+      - uses: actions/upload-artifact@v4
+        with:
+          name: official-refresh-report
+          path: public/official-refresh.json
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - id: deploy
+        uses: actions/deploy-pages@v4
