@@ -46,7 +46,7 @@ async function getJSON(url){const r=await fetch(url,{headers:{Accept:'applicatio
 async function catalog(source,term,{pages=1}={}){
   if(source.currency!=='BRL')throw Error('Moeda brasileira não verificada');
   const products=[];let truncated=false;
-  for(let i=0;i<pages;i++){const url=new URL('/api/catalog_system/pub/products/search',source.url);url.searchParams.set('ft',term);url.searchParams.set('_from',String(i*50));url.searchParams.set('_to',String(i*50+49));const batch=await getJSON(url);products.push(...batch);if(batch.length<50)return {products,truncated:false};truncated=i===pages-1;}
+  for(let i=0;i<pages;i++){const url=new URL('/api/catalog_system/pub/products/search',source.url);url.searchParams.set('ft',term);url.searchParams.set('_from',String(i*50));url.searchParams.set('_to',String(i*50+49));const batch=await getJSON(url.href.replace(/\+/g,'%20'));products.push(...batch);if(batch.length<50)return {products,truncated:false};truncated=i===pages-1;}
   return {products,truncated};
 }
 const config=async()=>JSON.parse(await readFile(new URL('./config.json',import.meta.url),'utf8'));
