@@ -36,7 +36,7 @@ export function createConsultationService(config,{apiKey=process.env.FIRECRAWL_A
   return createServer(async(req,res)=>{
     res.setHeader('Content-Type','application/json; charset=utf-8');res.setHeader('Cache-Control','no-store');
     const send=(status,body)=>{res.writeHead(status);res.end(JSON.stringify(body))};
-    if(req.url==='/health'&&req.method==='GET')return send(200,{ready:Boolean(apiKey&&accessCode),queue:pending.size,offerLimits:{official:1,marketplace:2,competitor:1},supplierPages:1,officialOnly:true});
+    if(req.url==='/health'&&req.method==='GET')return send(200,{ready:Boolean(apiKey&&accessCode),queue:pending.size,offerLimits:{official:1,marketplace:2,competitor:1},supplierPages:1,officialOnly:true,retailerMode:'direct-first-v1',retailerPagesPerSource:1});
     if(req.headers.origin!==origin)return send(403,{error:'Origem não autorizada.'});
     res.setHeader('Access-Control-Allow-Origin',origin);res.setHeader('Vary','Origin');res.setHeader('Access-Control-Allow-Methods','POST, OPTIONS');res.setHeader('Access-Control-Allow-Headers','Content-Type, Authorization');
     if(req.method==='OPTIONS'){res.writeHead(204);return res.end()}

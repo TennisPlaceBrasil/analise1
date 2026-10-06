@@ -1,5 +1,7 @@
 // Piloto manual: lê páginas públicas renderizadas, sem inferir preços pelo texto.
 import {matches,key,norm} from './coletor.mjs';
+import selection from './public/offer-selection.js';
+const {limitOffers}=selection;
 const array=v=>Array.isArray(v)?v:v?[v]:[];
 function nodes(value,out=[]){
   if(Array.isArray(value))for(const v of value)nodes(v,out);
@@ -81,14 +83,13 @@ export function batchTargets(result,brand='OLYMPIKUS'){
     .sort((a,b)=>age(a[1])-age(b[1])||a[1].group.localeCompare(b[1].group,'pt-BR'))
     .slice(0,5).map(([id])=>id);
 }
-export async function runRetailerPilot(result,{apiKey=process.env.FIRECRAWL_API_KEY,fetchImpl=fetch,targetKeys=[key('OLYMPIKUS','CORRE 5 U')],batch=false}={}){
+export async function runRetailerPilot(result,{apiKey=process.env.FIRECRAWL_API_KEY,fetchImpl=fetch,targetKeys=[key('OLYMPIKUS','CORRE 5 U')],batch=false,directFetchImpl=fetch}={}){
   const targets=targetKeys.map(id=>result.groups[id]).filter(Boolean).slice(0,batch?5:1);
   result.retailerBatch={mode:batch?'batch':'pilot',groups:[],calls:0};
   if(!targets.length){result.retailerBatch.message='Nenhum agrupador de tênis elegível para esta marca na coleta de catálogo.';result.warnings.push(result.retailerBatch.message);return result}
-  if(!apiKey){result.retailerBatch.message='Consulta não executada: configure FIRECRAWL_API_KEY nos Secrets do GitHub.';result.warnings.push(result.retailerBatch.message);return result}
   let calls=0;
   const scrape=async url=>{
-    if(++calls>(batch?10:8))throw Error('Limite de páginas desta execução atingido');
+    if(++calls>targets.length*2)throw Error('Limite de páginas desta execução atingido');
     const r=await fetchImpl('https://api.firecrawl.dev/v2/scrape',{method:'POST',headers:{Authorization:'Bearer '+apiKey,'Content-Type':'application/json'},body:JSON.stringify({url,formats:['rawHtml','links'],onlyMainContent:false,maxAge:0,timeout:45000,location:{country:'BR',languages:['pt-BR']}}),signal:AbortSignal.timeout(55000)});
     // Não registra resposta/URL da API ou credenciais nos logs públicos.
     if(!r.ok)throw Error('Serviço de leitura: HTTP '+r.status);
@@ -98,24 +99,40 @@ export async function runRetailerPilot(result,{apiKey=process.env.FIRECRAWL_API_
     return d;
   };
   for(const entry of targets)for(const source of [{name:'Netshoes',url:'https://www.netshoes.com.br/',category:'marketplace'},{name:'Centauro',url:'https://www.centauro.com.br/',category:'competitor'}]){
-    let offers=[],reason,status='no_match',pages=0;
+    let offers=[],reason,status='no_match',pages=0,directPages=0,method='direct';
     try{
       const term=norm(entry.brand+' '+norm(entry.group).replace(/\s+[MFU]$/i,'')).toLowerCase().replaceAll(' ','-');
       const search=new URL('/busca/'+term,source.url).href;
-      const data=await scrape(search);pages++;
-      offers.push(...pageOffers(data.rawHtml,source,entry.brand,entry.group,search));
-      for(const url of batch?[]:productLinks(data.links||[],source,entry.brand,entry.group)){
-        const p=await scrape(url);pages++;offers.push(...pageOffers(p.rawHtml,source,entry.brand,entry.group,url));
+      // Uma página de busca por fonte. Firecrawl só é usado quando a leitura
+      // pública direta falha ou não contém uma oferta válida para o modelo.
+      let directError;
+      try{
+        const r=await directFetchImpl(search,{headers:{Accept:'text/html','User-Agent':'TennisPlacePriceAnalysis/1.0'},signal:AbortSignal.timeout(20000)});
+        directPages++;
+        if(!r.ok)throw Error('Página da loja: HTTP '+r.status);
+        if(r.url&&!localURL(r.url,search))throw Error('Página redirecionada para outro domínio');
+        const html=await r.text();
+        offers=pageOffers(html,source,entry.brand,entry.group,search);
+        if(!offers.length)throw Error('Página direta sem oferta estruturada comparável');
+      }catch(e){directError=e.message}
+      if(!offers.length){
+        if(!apiKey)throw Error(directError+'; Firecrawl não configurado para alternativa.');
+        method='firecrawl';
+        const data=await scrape(search);pages++;
+        offers=pageOffers(data.rawHtml,source,entry.brand,entry.group,search);
       }
       status=offers.length?'ok':'no_match';reason=offers.length?undefined:'Páginas consultadas sem oferta estruturada comparável em BRL e com estoque.';
     }catch(e){status=offers.length?'ok':'unavailable';reason=e.message}
+    const previous=entry.offers.filter(o=>o.source===source.name);
+    const preserved=status==='unavailable'&&previous.length>0;
     entry.offers=entry.offers.filter(o=>o.source!==source.name);
-    entry.offers.push(...[...new Map(offers.map(o=>[o.url+'|'+o.price,o])).values()]);
+    entry.offers.push(...(preserved?previous:limitOffers(offers)));
+    if(preserved)reason+=' Preços anteriores preservados com suas datas originais.';
     entry.sources=entry.sources.filter(s=>s.source!==source.name);
-    entry.sources.push({source:source.name,category:source.category,status,reason,truncated:true,pages,checkedAt:new Date().toISOString()});
+    entry.sources.push({source:source.name,category:source.category,status,reason,truncated:true,pages,directPages,method,preserved,checkedAt:new Date().toISOString()});
     console.log(entry.brand+'/'+entry.group+' · '+source.name+': '+status+' ('+pages+' páginas)');
   }
-  result.warnings.push(batch?'Lote manual: até 5 agrupadores de tênis e 10 páginas de busca. Cobertura parcial.':'Piloto manual limitado a CORRE 5 U, Netshoes e Centauro, até 8 páginas. Demais agrupadores usam a coleta de catálogo.');
+  result.warnings.push('Consulta restrita aos modelos solicitados: uma página por loja, até 2 anúncios Netshoes e 1 Centauro. Firecrawl apenas como alternativa à leitura direta.');
   result.retailerBatch={mode:batch?'batch':'pilot',groups:targets.map(g=>({brand:g.brand,group:g.group})),calls};
   return result;
 }
