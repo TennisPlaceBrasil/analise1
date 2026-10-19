@@ -29,14 +29,14 @@ jobs:
         with:
           node-version: '22'
       - name: Verificar coletor e fila
-        run: node --test coletor.test.mjs retailer-pilot.test.mjs retailer-cache.test.mjs request-queue.test.mjs run-collection.test.mjs offer-selection.test.mjs public-ui.test.mjs
+        run: node --test coletor.test.mjs retailer-pilot.test.mjs retailer-cache.test.mjs request-queue.test.mjs run-collection.test.mjs offer-selection.test.mjs public-ui.test.mjs auth.test.mjs
       - name: Preservar resultados e processar solicitações
         run: node run-collection.mjs
         env:
           PROCESS_QUEUE: ${{ github.event_name != 'push' }}
           FIRECRAWL_API_KEY: ${{ github.event_name != 'push' && secrets.FIRECRAWL_API_KEY || '' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: cp config.json public/config.json
+      - run: node -e "const fs=require('fs'),c=JSON.parse(fs.readFileSync('config.json'));fs.writeFileSync('public/config.json',JSON.stringify({marketEndpoint:c.marketEndpoint}))"
       - uses: actions/upload-artifact@v4
         with:
           name: processed-requests

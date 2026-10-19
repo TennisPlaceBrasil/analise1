@@ -1,0 +1,4833 @@
+Warning: truncated output (original token count: 27712)
+Total output lines: 6746
+
+[
+  {
+    "brand": "OLYMPIKUS",
+    "group": "119 G ULTRALEVE F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "130G ULTRALEVE U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "146 G ULTRALEVE F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "156 G ULTRALEVE F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "171546C RUN STAR MOTION CANO LONGO U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "175 G ULTRALEVE F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "177 G ULTRALEVE F"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "194 STRIDE M"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "195 BRAVUS M"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "2002R U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "215G ULTRALEVE M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "232 G ULTRALEVE M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "237 G ULTRALEVE M"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "275 KINGSTON M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "3\" PERFORMANCE 2/1 SHORTS F"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "413 V3 M"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "460 V4 F"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "460 V4 M"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "480 LOW U"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "5\" PERFORMANCE 2/1 SHORTS M"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "520V8 F"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "520V8 KIDS"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "530 U"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "550 F"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "550 M"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "603 U"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "680 V9 F"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "680 V9 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "7\" PERFORMANCE SHORTS M"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "9060 F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "ACCENT NXT BDP M"
+  },
+  {
+    "brand": "FILA",
+    "group": "ACD CLASSIC F"
+  },
+  {
+    "brand": "FILA",
+    "group": "ACD CLASSIC M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ACELERA F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ACELERA M"
+  },
+  {
+    "brand": "FILA",
+    "group": "ACER F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "ACESSÓRIOS UNDER ARMOUR"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ACQUA F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ACQUA INFANTIL"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ACTION 3 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ACTION 3 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ACTION 4 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ACTION 4 M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "ACTION M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ADIZERO DRIVE RC F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ADIZERO DRIVE RC M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ADIZERO SL 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ADRENA 2 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ADRENA F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ADVANCE RSP M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ADVANTAGE BASE 2.0 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ADVANTAGE BASE CORE F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ADVANTAGE BASE F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ADVANTAGE BASE M"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "AERO BURST F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "AERO BURST M"
+  },
+  {
+    "brand": "FILA",
+    "group": "AERO SKYFOAM F"
+  },
+  {
+    "brand": "FILA",
+    "group": "AERO SKYFOAM M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "AGORA U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ALFA 2 F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ALPHABOOST V1 F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ALPHABOOST V1 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ALPHABOUNCE + F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ALPHABOUNCE + M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ALPHAEDGE + F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ALPHAEDGE + M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "AMBAR U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ANGEL 3 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ANGEL COLORS F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "ANZARUN LITE BOLD U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "APOLIS F"
+  },
+  {
+    "brand": "HOKA",
+    "group": "ARAHI 7 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "ARCADE LOW F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "ARCH FIT 2.0 F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "ARCH FIT 2.0 M"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "ARCH FIT DLUX - KEY JOURNEY F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "ARCHED FILA F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ARROW F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ARROW M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ASFALTO U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ASTRAL F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ATALHO U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ATENA F"
+  },
+  {
+    "brand": "FILA",
+    "group": "ATHLON F"
+  },
+  {
+    "brand": "FILA",
+    "group": "ATHLON M"
+  },
+  {
+    "brand": "ECKO",
+    "group": "ATLANTA F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ATLANTIS F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ATLANTIS M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ATMOS F"
+  },
+  {
+    "brand": "FILA",
+    "group": "ATMOSPHERE M"
+  },
+  {
+    "brand": "LYND",
+    "group": "ATOMIC U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "AURA F"
+  },
+  {
+    "brand": "LYND",
+    "group": "AURA F"
+  },
+  {
+    "brand": "FILA",
+    "group": "AXILUS ACE CLAY M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "AXILUS ACE F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "AXILUS ACE M"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BAG CONVERSE 2 SLING U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BAG CONVERSE CHUCK MESSENGER U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BAG CONVERSE GO 2 FESTIVAL U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BAG CONVERSE NYLON CHUCK CROSSBODY U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BAG GO 2"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "BALLER M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BARRA M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "BARREDA DECODE M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "BARREDA F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "BARREDA M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BASE ONE M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BASE PRIME F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BASE PRIME M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BASE PRIME U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BASE RIDE F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BASE RIDE M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BEATS M"
+  },
+  {
+    "brand": "EVERLAST",
+    "group": "BERLIN"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA 6 ESSENTIAL F"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "BERMUDA ADULTO LITORANEA M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "BERMUDA ADULTO MORMAII M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA BASIC 6 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA BASIC MESH 7 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA BIG LOGO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA BOLSO CORRE FOCO 7 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA BOLSO CORRE FOCO 8 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA CORRE 7 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA CORRE C/ BOLSO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA CORRE C/ BOLSO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA CORRE FOCO 2EM1 5 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA CORRE FOCO 5 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA CORRE FORCA 5 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA CORRE FORCA 5 M"
+  },
+  {
+    "brand": "ECKO",
+    "group": "BERMUDA ECKO"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA ENERGY M 7"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA ESSENCE F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA ESSENTIAL F"
+  },
+  {
+    "brand": "FILA",
+    "group": "BERMUDA FLAT LIFE II F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA MIZUNO ENERGY M 7 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA MIZUNO TENNIS MASTER 7 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA MOLETOM M"
+  },
+  {
+    "brand": "MONS",
+    "group": "BERMUDA MONS"
+  },
+  {
+    "brand": "RED NOSE",
+    "group": "BERMUDA RED NOSE M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA RIP STOP M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA ROOT MESH 2 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA ROOT MESH M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA RUN BIRD M"
+  },
+  {
+    "brand": "FILA",
+    "group": "BERMUDA SPORT 7.5 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "BERMUDA SPORTS MYLER 8 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BERMUDA SPORTWEAR F"
+  },
+  {
+    "brand": "FILA",
+    "group": "BERMUDA TRAIN II 8 M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "BERMUDA TRAIN M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BERMUDA TREINO 7 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BLOCO M"
+  },
+  {
+    "brand": "FILA",
+    "group": "BLUSA EASY TRAINING CREPE FLOW F"
+  },
+  {
+    "brand": "RED NOSE",
+    "group": "BLUSA MOLETOM RED NOSE M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "BOLA CLASSICO U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "BOLA NEO CONTROL HS U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "BOLA NEO ECO U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "BOLA NEO SWERVE FUTSAL LNF U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "BOLA NEO SWERVE TEAM FB U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "BOLA SALA V CUP LNF U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "BOLA SALA V CUP U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BOLD F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BOLD M"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA BEMY2K TOTE U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA CAMO CANVAS TOTE U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA CHUCK TAYLOR TOTE BAG U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA CONVERSE CANVAS FIVE STAR TOTE U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA CONVERSE GO2 DUFFEL MINI U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA CONVERTIBLE CROSSBODY U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA CROSSBODY 2"
+  },
+  {
+    "brand": "FILA",
+    "group": "BOLSA DE OMBRO FUNCTIONAL BASIC U"
+  },
+  {
+    "brand": "FILA",
+    "group": "BOLSA FILA SPORT LIFE OUTLINE PP U"
+  },
+  {
+    "brand": "FILA",
+    "group": "BOLSA FILA SPORT LIFE OUTLINE U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BOLSA GYM 2.0 U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA PREMIUM CANVAS TOTE U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA PREMIUM HEAVYWEIGHT CANVAS TOTE BAG U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA SEASONAL GRAPHIC TOTE U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA STAR CHEVRON CANVAS TOTE BAG U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "BOLSA UTILITY HALF MOON POUCH U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "BOMBA LOGO U"
+  },
+  {
+    "brand": "HOKA",
+    "group": "BONDI 8 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "BONÉ CASUAL OSAKA NEW U"
+  },
+  {
+    "brand": "DIVERSOS",
+    "group": "BONE CASUAL STYLE U"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "BONÉ LIGHTWEIGHT CAP U"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "BOOST RUN F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "BOOST RUN M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "BOREAL F"
+  },
+  {
+    "brand": "OAKLEY",
+    "group": "BRIDGE M"
+  },
+  {
+    "brand": "OUTROS",
+    "group": "BRINDE"
+  },
+  {
+    "brand": "USO/CONSUMO",
+    "group": "BRINDES"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "BRISTOL U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "BRUMA F"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "BULL M"
+  },
+  {
+    "brand": "EVERLAST",
+    "group": "BUNKER 2 F"
+  },
+  {
+    "brand": "EVERLAST",
+    "group": "BUNKER M"
+  },
+  {
+    "brand": "FILA",
+    "group": "BUZZARD BOLD F"
+  },
+  {
+    "brand": "FILA",
+    "group": "BUZZARD BOLD M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CALÇA ESSENTIAL OLYMPIKUS M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CALÇA FIT M"
+  },
+  {
+    "brand": "RED NOSE",
+    "group": "CALÇA RED NOSE M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CALCAO STRIKER PREMIUM II U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CALCAO SX M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CALCAO TOPPER STRIKER M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CALCAO TWR STRIKER U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CALCAO UMBRO LEGACY M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CALCAO UMBRO STRIKER PREMIUM II M"
+  },
+  {
+    "brand": "FILA",
+    "group": "CALZINI F"
+  },
+  {
+    "brand": "FILA",
+    "group": "CALZINI M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CAMISA LEGACY DIAMOND M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CAMISA PERFORMANCE-T F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CAMISA PERFORMANCE-T M"
+  },
+  {
+    "brand": "ECKO",
+    "group": "CAMISA POLO ECKO"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CAMISA TSHIRT ESSENTIAL MC 2.0 M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CAMISA TWR STRIKER M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CAMISA UMBRO BLEND LARGE DIAMOND III M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CAMISA UMBRO ESSENTIAL M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CAMISA UMBRO LEGACY M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CAMISETA ABC CAMO MANGA CURTA M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CAMISETA ASSINATURA M"
+  },
+  {
+    "brand": "FILA",
+    "group": "CAMISETA BASIC RUN PRINT M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CAMISETA BASIC SPORT MELANGE M"
+  },
+  {
+    "brand": "FILA",
+    "group": "CAMISETA BASIC SPORTS II M"
+  },
+  {
+    "brand": "FILA",
+    "group": "CAMISETA BASIC SPORTS III F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CAMISETA BIG LOGO F"
+  },
+  {
+    "brand": "FILA",
+    "group": "CAMISETA BOX BASIC F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CAMISETA CASUAL U"
+  },
+  {
+    "brand": "FILA",
+    "group": "CAMISETA COMFORT BASIC SPORTS M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CAMISETA COURT 2 M"
+  },
+  {
+    "brand": "ECKO",
+    "group": "CAMISETA ECKO"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CAMISETA ESSENTIAL"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CAMISETA ITALIC M"
+  },
+  {
+    "brand": "FILA",
+    "group": "CAMISETA LETTER PREMIUM 2 F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CAMISETA LIVE SPORTSTYLE F"
+  },
+  {
+    "brand": "MONS",
+    "group": "CAMISETA MAGA CURTA MONS"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "CAMISETA MORMAII M"
+  },
+  {
+    "brand": "RED NOSE",
+    "group": "CAMISETA RED NOSE M"
+  },
+  {
+    "brand": "FILA",
+    "group": "CAMISETA REFLECTIVE CORE RUN M"
+  },
+  {
+    "brand": "FILA",
+    "group": "CAMISETA REGULAR CLASSIC M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CAMISETA SPEED STRIDE M"
+  },
+  {
+    "brand": "FILA",
+    "group": "CAMISETA SPORT MELANGE II M"
+  },
+  {
+    "brand": "FILA",
+    "group": "CAMISETA SPORTS LIGHT M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CAMISETA SPORTSTYLE LOG M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CAMISETA TECH 2.0 SS M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CAMISETA TECH SHORT F"
+  },
+  {
+    "brand": "OUTROS",
+    "group": "CAMISETA TIPO INSIDER"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "CAMISETA T-SHIRT MIZUNO NEW M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CAMISETA UA STREAKER RUN M"
+  },
+  {
+    "brand": "FILA",
+    "group": "CARBON U"
+  },
+  {
+    "brand": "LYND",
+    "group": "CARBON U"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CARINA 3.0 BDP F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CARINA 3.0 SD BDP F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CARINA BDP F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CARINA BDP F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CARINA L BDP F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CARINA SLIPON BDP F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CAVEN 2.0 BDP F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CAVEN 2.0 BDP M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CAVEN 2.0 MONO WNS BDP F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CAVEN 2.0 RETRO CLUB BDP M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CELL AETHER SL BRA DP"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CELL DIVIDE V2 BDP M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CHALLENGER 4 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CHALLENGER 5 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CHALLENGER 5 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CHALLENGER 6 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CHALLENGER 6 M"
+  },
+  {
+    "brand": "REEBOK",
+    "group": "CHARGE RUNTE M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED  WING 2 F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED ENDLESS F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED ENDLESS M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED FIRST M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED NONSTOP F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED NONSTOP M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED QUICKER 2 F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED QUICKER 2 M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED SKYLINE 5 F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED SUNNY F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "CHARGED WING 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CHINELO POS CORRE U"
+  },
+  {
+    "brand": "LYND",
+    "group": "CHRONOS F"
+  },
+  {
+    "brand": "LYND",
+    "group": "CHRONOS M"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CHUCK 70  CANO ALTO CT0955"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CHUCK 70  CANO BAIXO CT0956"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CHUCK TAYLOR ALL STAR MULE LIFT CT1733"
+  },
+  {
+    "brand": "TOPPER",
+    "group": "CHUTEIRA BOLEIRO V SOCIETY"
+  },
+  {
+    "brand": "TOPPER",
+    "group": "CHUTEIRA DRIBLE VI FUTSAL M"
+  },
+  {
+    "brand": "TOPPER",
+    "group": "CHUTEIRA FORZA III FUTSAL M"
+  },
+  {
+    "brand": "TOPPER",
+    "group": "CHUTEIRA FORZA III SOCIETY M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CHUTEIRA FUTSAL CLASS 2.2 KIDS"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CHUTEIRA FUTSAL MASTER CLASS CLUB U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CHUTEIRA FUTSAL PRO 5 STABLE U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CHUTEIRA FUTSAL TOP SPEED LEAGUE U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CHUTEIRA FUTSAL UMBRO NEO STRIKER M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CHUTEIRA PRO 5 BUMP CLUB U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CHUTEIRA PRO 5 BUMP U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CHUTEIRA SOCIETY CLASS 2.2 KIDS"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CHUTEIRA SOCIETY MASTER CLASS CLUB U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "CHUTEIRA SOCIETY NEO STRIKER M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CICLO U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CIRCUITO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CITRUS 2 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CITRUS F"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "CITY M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "CITY WALL U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK0002 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK0004 CHUCK TAYLOR ALL STAR"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK0420 CHUCK TAYLOR ALL STAR JUVENIL U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK0430 CHUCK TAYLOR ALL STAR SEASONAL COLORS CANO CURTO KIDS"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK0909 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1007 CHUCK TAYLOR ALL STAR SIDE ZIP CANO LONGO KIDS"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1039 CHUCK TAYLOR ALL STAR HI SHINE TROUGH U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1042 CHUCK TAYLOR ALL STAR MOVE U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1098 CHUCK TAYLOR ALL STAR MOVE HI VINTAGE REMASTERED U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1100 CHUCK TAYLOR ALL STAR VINTAGE REMASTERED U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1101 CHUCK TAYLOR ALL STAR OX VINTAGE REMASTERED U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1257 STAR PLAYER 76 3V CANO CURTO KIDS"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1298 CHUCK TAYLOR ALL STAR HI DISNEY STITCH KIDS"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1299 CHUCK TAYLOR ALL STAR OX DISNEY STITCH KIDS"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1303 CHUCK TAYLOR ALL STAR HI DISNEY STITCH KIDS"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CK1328 CHUCK TAYLOR ALL STAR CANO CURTO U"
+  },
+  {
+    "brand": "FILA",
+    "group": "CLASSIC RUNNER SL F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CLIC M"
+  },
+  {
+    "brand": "HOKA",
+    "group": "CLIFTON 9 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CLIMA F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUD 6 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUD 6 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUD 6 VERSA M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "CLOUD U"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUD X 4 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUD X 5 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUD X 5 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDFLOW 5 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDFLOW 5 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDFLYER 5 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDMONSTER 2 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDMONSTER 2 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDMONSTER 3 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDMONSTER 3 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDMONSTER VOID F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDNOVA X 1 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDPULSE 2 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDPULSE NEXT M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDRUNNER 3 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDRUNNER 3 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDRUNNER 3 MAX F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDRUNNER 3 MAX M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDSTRATUS 3 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDSURFER 2 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDSURFER 2 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDSURFER MAX F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDSURFER MAX M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDSURFER NEXT F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDSURFER NEXT M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDSWIFT 4 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDSWIFT 4 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "CLOUDVISTA 2 F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CLUB II ERA M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CLUB II M"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0355 CHINELO ALL STAR SLIDE SLIP U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0378 RUN STAR HIKE ALL STAR CANO LONGO"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0379 RUN STAR HIKE ALL STAR CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0380 RUN STAR HIKE SEASONAL CANO LONGO"
+  },
+  {
+    "brand": "PUMA",
+    "group": "CO0381 RUN STAR HIKE SEASONAL CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0390 CONVERSE RIVAL SKT M"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0432 RUN STAR HIKE ALL STAR CANO LONGO"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0493 PRO BLAZE CLASSIC CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0498 CONVERSE BELMONT U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0501 PRO BLAZE V2 CLASSIC OX ESSENTIAL CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0503 PRO BLAZE CLASSIC OX SEASONAL SUEDE U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0505 STAR PLAYER OX ESSENTIAL U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0549 CHUCK TAYLOR RUN STAR TRAINER"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CO0633 CONVERSE RIVAL V2 OX SEASONAL SUEDE U"
+  },
+  {
+    "brand": "FILA",
+    "group": "COMET 2 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "COMET 2 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "COMET F"
+  },
+  {
+    "brand": "FILA",
+    "group": "COMET M"
+  },
+  {
+    "brand": "COCA COLA",
+    "group": "COMFORT GALAXY U"
+  },
+  {
+    "brand": "COCA COLA",
+    "group": "COMFORT MOTION U"
+  },
+  {
+    "brand": "COCA COLA",
+    "group": "COMFORT NOW U"
+  },
+  {
+    "brand": "COCA COLA",
+    "group": "COMFORT PARK U"
+  },
+  {
+    "brand": "COCA COLA",
+    "group": "COMFORT PULSE U"
+  },
+  {
+    "brand": "COCA COLA",
+    "group": "COMFORT UNITED U"
+  },
+  {
+    "brand": "ECKO",
+    "group": "COMPTON U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CONEX M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "CONNECT U"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "CONSISTENT 2.0-MILE F"
+  },
+  {
+    "brand": "LYND",
+    "group": "CONSTANT KIDS"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "COOL RIDE 2 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "COOL RIDE 2 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "COOL RIDE 3 U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "COOL RIDE 4 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "COOL RIDE 4 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE 3 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE 3 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE 4 STRAVA U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE 4 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE 5 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE 5 VANDERLEI U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE GRAFENO 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE GRAFENO 3 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE MAX 2 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE MAX 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE MAX F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE MAX M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE SUPRA 2 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE SUPRA 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE SUPRA U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE TRILHA 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE TRILHA 3 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE TRILHA M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE TURBO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE TURBO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE VENTO 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE VENTO 3 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CORRE VENTO M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "CORSARIO MIZUNO F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "COSMIC WAVES F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "COSMO U"
+  },
+  {
+    "brand": "FILA",
+    "group": "COURT 80 M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "COURT CLASSIC CLEAN BDP M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "COURT CLASSIC CLEAN SD BDP U"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "COURT CROP TOP 2 F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "COURT LALLY BDP U"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "COURT PLATFORM F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "COURT PLATFORM SUEDE F"
+  },
+  {
+    "brand": "NIKE",
+    "group": "COURT ROYALE 2 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "COURT SILK F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "COURT TANK 2 F"
+  },
+  {
+    "brand": "NIKE",
+    "group": "COURT VISION LO M"
+  },
+  {
+    "brand": "NIKE",
+    "group": "COURT VISION MID M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "COURT-T 2 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "COURT-T 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CRISTAL M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "CROPPED SOUL FIT F"
+  },
+  {
+    "brand": "OAKLEY",
+    "group": "CROSSFIRE M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "CSD SPORT U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0001 CHUCK TAYLOR ALL STAR CORE OX U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0001 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0004 CHUCK TAYLOR ALL STAR CANO ALTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0010 CHUCK TAYLOR ALL STAR OX SEASONAL U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0012 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0419 CHUCK TAYLOR ALL STAR SEASONAL CANO LONGO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT04190003 CHUCK TAYLOR ALL STAR SEASONAL U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0420 CHUCK TAYLOR ALL STAR SEASONAL CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT04200003 CHUCK TAYLOR ALL STAR SEASONAL U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0446  CHUCK TAYLOR ALL STAR MONOCROMÁTICO CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0447 CHUCK TAYLOR ALL STAR  MONOCHROME HI U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0448 CHUCK TAYLOR ALL STAR CANO BAIXO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0449 CHUCK TAYLOR ALL STAR EUROPEAN HI U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0450 CHUCK TAYLOR ALL STAR NEW MALDEN U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT04500006 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT04500010 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0451 CHUCK TAYLOR ALL STAR NEW MALDEN HI U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0494 CHUCK TAYLOR ALL STAR LIFT U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0495 CHUCK TAYLOR ALL STAR LIFT"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0825 CHUCK TAYLOR ALL STAR MONOCHROME LEATHER HI U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0955 CHUCK 70 ALL STAR VINTAGE CANO ALTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0956 CHUCK 70 ALL STAR VINTAGE CANO BAIXO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0963  CHUCK TAYLOR ALL STAR LIFT SEASONAL CANO CURTO"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0982 CHUCK TAYLOR ALL STAR LIFT U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT0983 CHUCK TAYLOR COURO PLATAFORMA"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT09830003 CHUCK TAYLOR ALL STAR LIFT U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1101 CHUCK TAYLOR ALL STAR OX VINTAGE REMASTERED KIDS"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1200 CHUCK TAYLOR ALL STAR LIFT SEASONAL CANO LONGO"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1308 CHUCK TAYLOR ALL STAR F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1309 CHUCK TAYLOR ALL STAR LIFT F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1456 CHUCK 70 SEASONAL CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1546 CHUCK TAYLOR ALL STAR MOVE CANO LONGO"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1581 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1592 CHUCK TAYLOR ALL STAR MOVE CANO CURTO"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1616 CHUCK TAYLOR ALL STAR MOVE CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1622 CHUCK TAYLOR ALL STAR MOVE HI AUTHENTIC GLAM F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1729 CHUCK TAYLOR ALL STAR HI AUTHENTIC GLAM CANO ALTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1730 CHUCK TAYLOR ALL STAR OX AUTHENTIC GLAM F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1733 CHUCK TAYLOR ALL STAR MULE LIFT SEASONAL F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1780 CHUCK TAYLOR ALL STAR SHORELINE OX U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1781 CHUCK TAYLOR ALL STAR MOVE HI SEASONAL CANO LONGO F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1782 CHUCK TAYLOR ALL STAR MOVE OX CANO CURTO F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1785 CHUCK TAYLOR ALL STAR  CANO LONGO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1829 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1855 CHUCK TAYLOR ALL STAR CANO BAIXO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1872 CHUCK TAYLOR ALL STAR CANO LONGO"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1955 CHUCK TAYLOR ALL STAR SHORELINE KNIT U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1991 CHUCK TAYLOR ALL STAR HI SEASONAL PLUS U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT1992 CHUCK TAYLOR ALL STAR OX SEASONAL CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2283 CHUCK TAYLOR ALL STAR MOVE TRANCE FORM F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2357 CHUCK TAYLOR ALL STAR LUGGED 2.0 F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2369 ALL STAR MALDEN STREET U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2416 CHUCK TAYLOR ALL STAR WORKEAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2427 CHUCK TAYLOR ALL STAR HI GLAM F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2465 CHUCK TAYLOR ALL STAR LIFT OX SUMMER UTILITY CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2466 CHUCK TAYLOR ALL STAR HI SUMMER UTILITY F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2531 CHUCK TAYLOR ALL STAR HI VINTAGE REMASTERED U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2532 CHUCK TAYLOR ALL STAR OX VINTAGE REMASTERED U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2602 CHUCK TAYLOR HI STAR  U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2734 CHUCK TAYLOR ALL STAR CRUISE OX ESSENTIAL U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2762 CHUCK TAYLOR ALL STAR HIGH STREET CANO LONGO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT2763 CHUCK TAYLOR ALL STAR HIGH STREET CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT3014 CHUCK TAYLOR ALL STAR CANVAS CANO CURTO U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT3038 CHUCK TAYLOR ALL STAR OX SUMMER METAL F"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT32770002 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT32780002 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT35150001 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT35150002 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT35160001 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "CT35160002 CHUCK TAYLOR ALL STAR U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CYAN KIDS"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CYAN M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CYBER 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "CYBER 4 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "DAILY 4.0 U"
+  },
+  {
+    "brand": "FILA",
+    "group": "DAILY F"
+  },
+  {
+    "brand": "FILA",
+    "group": "DAILY M"
+  },
+  {
+    "brand": "ECKO",
+    "group": "DALLAS U"
+  },
+  {
+    "brand": "PUMA",
+    "group": "DARTER PRO M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "DASHER LITE BDP U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "DAY F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "DELICATE 4 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "DELTA KIDS U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "DELTA M"
+  },
+  {
+    "brand": "OAKLEY",
+    "group": "DELTA M"
+  },
+  {
+    "brand": "ECKO",
+    "group": "DENVER U"
+  },
+  {
+    "brand": "PETROPLUS",
+    "group": "DESODORANTE TENIS FRESH"
+  },
+  {
+    "brand": "ECKO",
+    "group": "DETROIT U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "DIFFUSE 4 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "DIFFUSION F"
+  },
+  {
+    "brand": "FILA",
+    "group": "DIFFUSION M"
+  },
+  {
+    "brand": "TOPPER",
+    "group": "DOMINATOR 3 KIDS"
+  },
+  {
+    "brand": "TOPPER",
+    "group": "DOMINATOR 3 M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "DRIFT U"
+  },
+  {
+    "brand": "FILA",
+    "group": "DUALITY 2 M"
+  },
+  {
+    "brand": "LYND",
+    "group": "DUNA KIDS U"
+  },
+  {
+    "brand": "LYND",
+    "group": "DUNA U"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "DURAMO 10 F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "DURAMO 10 M"
+  },
+  {
+    "brand": "DIVERSOS",
+    "group": "DURAMO 9"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "DURAMO RC U"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "DURAMO RC2 U"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "DURAMO SL F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "DURAMO SPEED 2 F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "DURAMO SPEED 2 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "DURAMO SPEED W F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "DURAMO SPEED W M"
+  },
+  {
+    "brand": "LYND",
+    "group": "DUST F"
+  },
+  {
+    "brand": "LYND",
+    "group": "DYA F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "DYNABLAST 3 F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "DYNABLAST 3 M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "DYNABLAST 5 F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "DYNABLAST 5 M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "DYNABLAST 6 SE F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "DYNABLAST 6 SE M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "DYNAMIC U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "EASY 2 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "EASY F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "EDGERIDE - EXXO M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "EDO CROSS U"
+  },
+  {
+    "brand": "FILA",
+    "group": "EFECTO 2 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "EFECTO 2 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "EFECTO F"
+  },
+  {
+    "brand": "FILA",
+    "group": "EFECTO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ELECTRA F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ELEVADO U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ELO M"
+  },
+  {
+    "brand": "FILA",
+    "group": "EMOTION F"
+  },
+  {
+    "brand": "TOPPER",
+    "group": "ENDGAME FUTSAL M"
+  },
+  {
+    "brand": "TOPPER",
+    "group": "ENDGAME SOCIETY M"
+  },
+  {
+    "brand": "FILA",
+    "group": "ENDURANCE M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "ENERGY U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ENIGMA 2 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ENIGMA 2 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ENIGMA 3 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ENIGMA 3 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ENIGMA F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ENIGMA M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ERA F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "EROS 2 INF…7712 tokens truncated…  "group": "NÍVEL M"
+  },
+  {
+    "brand": "KENNER",
+    "group": "NK7 POLIESTER M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOOSA TRI 16 M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 4 F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 4 M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 5 ATC M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 5 F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 5 LUXE F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 5 LUXE M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 5 M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 5 PLATINUM M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 5 TOKYO F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 5 TR F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 6 F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "NOVABLAST 6 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "NUVEM U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "NYX F"
+  },
+  {
+    "brand": "DIVERSOS",
+    "group": "ÓCULOS ARENA BUBBLE 3 JR"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "ONE STAR CO0369 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ONLY F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ONLY M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ORACLE F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "ORACLE M"
+  },
+  {
+    "brand": "KENNER",
+    "group": "ORAK M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ORBITA M"
+  },
+  {
+    "brand": "FILA",
+    "group": "OUTFIELD F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "OWN THE GAME 2.0 M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "PACE U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "PARK LIFESTYLE BDP M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "PARK LIFESTYLE EASY SD BDP F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "PARK LIFESTYLE EASY SD BDP M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "PARK LIFESTYLE EASY SD M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "PARK ST 2.0 F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "PARK ST 2.0 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "PARK ST F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "PARK ST M"
+  },
+  {
+    "brand": "ECKO",
+    "group": "PASADENA U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PASSO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PASSO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PERFECT 3 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PERFECT 4 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "PERFORMANCE BRA 2 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "PERFORMANCE JACKET M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "PERFORMANCE LONG-T 2 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "PERFORMANCE TANK F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "PERFORMANCE TANK M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PERFORMANCE TIGHTS 7/8 F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "PERFORMANCE TIGHTS SHORT F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "PERFORMANCE-T 3 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PERSIST U"
+  },
+  {
+    "brand": "LYND",
+    "group": "PHASE F"
+  },
+  {
+    "brand": "LYND",
+    "group": "PHASE M"
+  },
+  {
+    "brand": "LYND",
+    "group": "PHASE U"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "PHOENIX U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PLUMA F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "POUNCE LITE M"
+  },
+  {
+    "brand": "FILA",
+    "group": "PRESENCE F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PRIDE 3 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PRIDE 4 U"
+  },
+  {
+    "brand": "REEBOK",
+    "group": "PRIME GROUNDS SUEDE F"
+  },
+  {
+    "brand": "REEBOK",
+    "group": "PRIME LITE F"
+  },
+  {
+    "brand": "REEBOK",
+    "group": "PRIME LITE U"
+  },
+  {
+    "brand": "REEBOK",
+    "group": "PRIME SERVE F"
+  },
+  {
+    "brand": "REEBOK",
+    "group": "PRIME SERVE M"
+  },
+  {
+    "brand": "REEBOK",
+    "group": "PRIME SET U"
+  },
+  {
+    "brand": "LYND",
+    "group": "PRIMER F"
+  },
+  {
+    "brand": "LYND",
+    "group": "PRIMER M"
+  },
+  {
+    "brand": "FILA",
+    "group": "PROGRESS F"
+  },
+  {
+    "brand": "FILA",
+    "group": "PROGRESS LITE F"
+  },
+  {
+    "brand": "FILA",
+    "group": "PROGRESS LITE M"
+  },
+  {
+    "brand": "FILA",
+    "group": "PROGRESS M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PROOF 3 U"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "PROPEL V4 F"
+  },
+  {
+    "brand": "NEW BALANCE",
+    "group": "PROPEL V4 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "PROPHECY WAVEKNIT M"
+  },
+  {
+    "brand": "LYND",
+    "group": "PROTON 2 F"
+  },
+  {
+    "brand": "LYND",
+    "group": "PROTON 2 M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "PROWL SLIPON  F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "PURE KLUTCH M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "PUREBOOST 23 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "PUREBOOST 5 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "PURPURA F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "QT RACER 3.0 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "QU4DRA 2 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "QU4DRA BR1 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "QUADRA BR1 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "QUEBRA VENTO ESSENTIAL M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "QUESTAR 3 F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "QUESTAR 3 M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "R78 VOYAGE F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER ADVANTAGE F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER ADVANTAGE M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER BRAVE RUN M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER CARBON 2 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER CARBON 2 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER CARBON 3 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER CARBON 3 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER CARBON M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER CURVE 2 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER CURVE 2 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER CURVE F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER CURVE M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER FOR ALL F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER FOR ALL M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER GRID M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "RACER MARKER M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER NAIROBI F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER NAIROBI M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER SKYTRAIL F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER SKYTRAIL M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER SPEEDZONE F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER SPEEDZONE M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER T2 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER T2 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER T2 S F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER T2 S M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER T2 XTREME F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER T2 XTREME M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "RACER TR 23 F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "RACER TR 23 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER WINGS F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RACER WINGS M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "RAIDEN 4 F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "RAIDEN 4 M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "RAIDEN 5 F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "RAIDEN 5 M"
+  },
+  {
+    "brand": "KENNER",
+    "group": "RAKKA M"
+  },
+  {
+    "brand": "KENNER",
+    "group": "RAKKA NYLON U"
+  },
+  {
+    "brand": "KENNER",
+    "group": "RAKKA POLIESTER U"
+  },
+  {
+    "brand": "KENNER",
+    "group": "RAKKA ULTRA FULL FORCE U"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "RALCON LORKEN M"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "RALCON TOP POINT M"
+  },
+  {
+    "brand": "REEBOK",
+    "group": "RAMPRUSH U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "RASTRO M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RAY TRACER TR F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "RAYO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "RAYO M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "RBD GAME LOW RETRO CLUB BDP M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "REACT U"
+  },
+  {
+    "brand": "PUMA",
+    "group": "REBOUND V6 LOW BDP M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RECOVERY F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RECOVERY KIDS"
+  },
+  {
+    "brand": "FILA",
+    "group": "RECOVERY M"
+  },
+  {
+    "brand": "KENNER",
+    "group": "RED M"
+  },
+  {
+    "brand": "KENNER",
+    "group": "RED PRO U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REFLECT U"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "REGATA BASELINE PRINTED M"
+  },
+  {
+    "brand": "FILA",
+    "group": "REGATA BASIC SPORTS II M"
+  },
+  {
+    "brand": "FILA",
+    "group": "REGATA BASIC SPORTS III F"
+  },
+  {
+    "brand": "FILA",
+    "group": "REGATA BIO II F"
+  },
+  {
+    "brand": "FILA",
+    "group": "REGATA BIO III F"
+  },
+  {
+    "brand": "FILA",
+    "group": "REGATA BIO III M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REGATA CORRE F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REGATA CORRE FOCO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REGATA CORRE FOCO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REGATA CORRE M"
+  },
+  {
+    "brand": "FILA",
+    "group": "REGATA EASY TRAINING CREPE FLOW F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "REGATA ENERGY 2.0 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "REGATA ENERGY F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REGATA ESSENTIAL F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REGATA ESSENTIAL M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "REGATA MIZUNO SPARK 2 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "REGATA NIRVANA F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "REGATA NIRVANA M"
+  },
+  {
+    "brand": "FILA",
+    "group": "REGATA REFLECTIVE CORE RUN M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REGATA RUNNER 2.0 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REGATA RUNNER 2.0 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REGATA RUNNER F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REGATA RUNNER M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "REGATA SPARK 2 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "REGATA SPORT MELANGE II M"
+  },
+  {
+    "brand": "FILA",
+    "group": "REGATA SPORTS LIGHT M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "REGATA TECH 2.0 TANK M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "REGATA TECH TANK F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "REGATA TECH TANK M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RESEARCH F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RESEARCH M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "RESPONSE 2 F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "RESPONSE 2 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "RESPONSE F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "RESPONSE M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "RESPONSE RUNNER U"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "RESPONSE SUPER M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REVERSO 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "REVERSO 3 U"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "RICKTER M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RIDE 2 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RIDE 2 M"
+  },
+  {
+    "brand": "HOKA",
+    "group": "RINCON 4 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RISE UP F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RISE UP M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "RITMO M"
+  },
+  {
+    "brand": "ECKO",
+    "group": "RIVERSIDE M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "RUA U"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "RUN FALCON 3.0 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "RUNFALCON 5 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "RUNNER 2K F"
+  },
+  {
+    "brand": "FILA",
+    "group": "RUNNER 2K M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "RUSH M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SAFIRA F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SAGA KIDS"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SAGAZ U"
+  },
+  {
+    "brand": "LYND",
+    "group": "SEM"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SHORT CORRE 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SHORT CORRE 3 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SHORT CORRE FOCO 2EM1 3 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SHORT CORRE FOCO 3 F"
+  },
+  {
+    "brand": "ECKO",
+    "group": "SHORT ECKO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SHORT ESSENTIAL BASIC 2 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SHORT ESSENTIAL F"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "SHORT MORMAII M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "SHORT PERFORMANCE WOVEN 3 F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "SHORT PERFORMANCE WOVEN 5 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "SHORTS  5\" PERFORMANCE M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SHORTS ECO F"
+  },
+  {
+    "brand": "FILA",
+    "group": "SHORTS FLAT LIFE F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "SHORTS PLAY UP 3.0 F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "SHORTS RIVAL TERRY 6IN M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "SHORTS RIVAL TERRY 7IN M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SHORTS RUNNING 5 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "SHORTS TENNIS BASIC F"
+  },
+  {
+    "brand": "FILA",
+    "group": "SHORTS TRAIN 5 M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "SHORTS W FLY BY 2.0"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SHOULDER BAG"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SHOULDER BAG MINI"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SHUFFLE BDP M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SHUFFLE DOWNTOWN F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SHUFFLE DOWNTOWN M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SHUFFLE DOWNTOWN OG U"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SHUFFLE DOWNTOWN SD M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SHUFFLE M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SHUFFLE MD BDP F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SHUFFLE MD BDP M"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "SINT 03 M"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "SINT 09 M"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "SKECH CLOUD PERFECTLY PLUSH F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "SKECH CLOUD SMOOTH WAVE F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "SKECH LITE PRO - BEST CHANCE F"
+  },
+  {
+    "brand": "FILA",
+    "group": "SKORT TENNIS BASIC F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "SKX AERO TEMPO M"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "SKX LEAGUE M"
+  },
+  {
+    "brand": "HOKA",
+    "group": "SKYFLOW M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "SKYROCKET LITE 2 F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "SKYROCKET LITE 2 M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "SKYROCKET LITE F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SKYROCKET LITE WNS F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SKYRUN F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SKYRUN M"
+  },
+  {
+    "brand": "FILA",
+    "group": "SKYWIND F"
+  },
+  {
+    "brand": "FILA",
+    "group": "SKYWIND M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SLIDE ENERZY M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SLIDE NEO U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SLIDE WAVE U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "SMASH V2 BDP M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SMASH V2 BDP M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "SMASH V2 BDP U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "SOFTRIDE ENZO NXT BDP M"
+  },
+  {
+    "brand": "LYND",
+    "group": "SOLAR F (LYND)"
+  },
+  {
+    "brand": "LYND",
+    "group": "SOLAR M (LYND)"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SOMA 2 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SOMA U"
+  },
+  {
+    "brand": "FILA",
+    "group": "SONIC F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "SONICBLAST F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "SONICBLAST M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SONORO 3 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SPACE 3 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SPACE 3 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SPACE 4 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SPACE 4 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SPACE 5 U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SPACE 6 U"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "SPEED BELT U"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "SPEED IV CAMPO"
+  },
+  {
+    "brand": "FILA",
+    "group": "SPEED LITE F"
+  },
+  {
+    "brand": "FILA",
+    "group": "SPEED LITE M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "SPEED SONIC CAMPO"
+  },
+  {
+    "brand": "FILA",
+    "group": "SPEEDROCKER SKYFOAM F"
+  },
+  {
+    "brand": "FILA",
+    "group": "SPEEDROCKER SKYFOAM M"
+  },
+  {
+    "brand": "FILA",
+    "group": "SPEEDZONE 2 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "SPIDER KNIT M"
+  },
+  {
+    "brand": "FILA",
+    "group": "SPLIT FILA M"
+  },
+  {
+    "brand": "REEBOK",
+    "group": "SPRINT F"
+  },
+  {
+    "brand": "FILA",
+    "group": "SPRITZ F"
+  },
+  {
+    "brand": "FILA",
+    "group": "SPRITZ M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "SQUAD ICON PS U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "SQUAD JOY PS U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "SQUAD STREET PS U"
+  },
+  {
+    "brand": "FILA",
+    "group": "SQUALL KIDS"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "ST RUNNER V2  SN BDP M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "ST RUNNER V3 L U"
+  },
+  {
+    "brand": "PUMA",
+    "group": "ST RUNNER V4 MESH M"
+  },
+  {
+    "brand": "CONVERSE",
+    "group": "STAR PLAYER ALL STAR CO0374"
+  },
+  {
+    "brand": "FILA",
+    "group": "STAY F"
+  },
+  {
+    "brand": "FILA",
+    "group": "STAY M"
+  },
+  {
+    "brand": "FILA",
+    "group": "STEP F"
+  },
+  {
+    "brand": "FILA",
+    "group": "STEP M"
+  },
+  {
+    "brand": "LYND",
+    "group": "STONE 2 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "STREAM KIDS"
+  },
+  {
+    "brand": "FILA",
+    "group": "STREET FIT 2 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "STREET FIT 2 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "STREET FIT F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "STREET WIND F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "STREET WIND M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "STREETCHECK F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "STREETCHECK M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "STREETTALK BOLD F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "STREETTALK F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "STREETTALK M"
+  },
+  {
+    "brand": "FILA",
+    "group": "STRIKER F"
+  },
+  {
+    "brand": "FILA",
+    "group": "STRIKER M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SUBVERSE F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SUBVERSE M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SUBVERSE U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SUNNA F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SUNRISE F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "SUNRISE M"
+  },
+  {
+    "brand": "FILA",
+    "group": "SUPER FLIP F"
+  },
+  {
+    "brand": "FILA",
+    "group": "SUPER FLIP M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SUPREMO KIDS"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SWIFT 4 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SWIFT 5 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "SWIFT 6 U"
+  },
+  {
+    "brand": "LYND",
+    "group": "SYNAPSE U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T SHIRT STAMP M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TECH 2.0 SS TEE M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TECH SSC SOLID F"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "THE ROGER ADVANTAGE 1 M"
+  },
+  {
+    "brand": "ON RUNNING",
+    "group": "THE ROGER CLUBHOUSE 3 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TITANIUM F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TITANIUM M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TOP BAIXO IMPACTO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TOP BASIC F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TOP CORRE ALTO IMPACTO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TOP CORRE FOCO ALONGADO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TOP CORRE FOCO ALTO IMPACTO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TOP CORRE FOCO MEDIO IMPACTO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TOP CORRE MEDIO IMPACTO F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TOP CROSSBACK MID BRA F"
+  },
+  {
+    "brand": "TOPPER",
+    "group": "TOP DRIBLE VI SOCIETY M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "TOP ESSENCE F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TOP ESSENTIAL F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TOP HG ARMOUR MID PADL F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TOP KNIT F"
+  },
+  {
+    "brand": "FILA",
+    "group": "TOP PRO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TOP RUNNER 1.0 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "TOP SPORTWEAR F"
+  },
+  {
+    "brand": "FILA",
+    "group": "TRACER 2 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "TRACER 2 M"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "TRAIL ALTITUDE -ANORAK M"
+  },
+  {
+    "brand": "FILA",
+    "group": "TRANSITION F"
+  },
+  {
+    "brand": "FILA",
+    "group": "TRANSITION M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TREINO U"
+  },
+  {
+    "brand": "FILA",
+    "group": "TREND 2.0 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "TREND 2.0 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "TREND 3.0 M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TRIBASE CROSS 2 F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TRIBASE CROSS 2 M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TRIBASE CROSS 2 SE F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TRIBASE CROSS 2 SE M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TRIBASE CROSS F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TRIBASE CROSS M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TRIBASE REPS 2 M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TRIBASE REPS 2 SE F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TRIBASE REPS 2 SE M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "TRIBASE REPS M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TRIPACK MEIA CANO INVISIVEL SEM FLEECE"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TRIPACK MEIA NEON CANO INVISÍVEL F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TRIUNFO 2 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TRIUNFO 3 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TRIUNFO 3 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT BASIC BIG M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT BASIC LOGO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT BASIC LOGO MC M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT BIG LOGO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT CORRE F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT CORRE FOCO F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT CORRE FOCO M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT CORRE FORCA F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT CORRE FORCA M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT CORRE M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT ECO F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT ENERGY F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT ENERGY M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "TSHIRT ENERGY STAMP III M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT ENERGY STAMP M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT ESSENTIAL MANGA CURTA F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT ESSENTIAL MANGA CURTA M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT ESSENTIAL MANGA CURTA M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "TSHIRT ESSENTIAL MC M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT LIFESTYLE M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT LIFESTYLEM M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT LINE MC M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "TSHIRT LOGO M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT MIZUNO PRO UV F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT MIZUNO SPORTWEAR F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT ML ENERGY F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT ML ENERGY M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT ML NIRVANA F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT ML NIRVANA M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT ML PRO UV F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "TSHIRT NIRVANA F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT NIRVANA F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT NIRVANA M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT PRO UV M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT RUN SPARK 2 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT RUN SPARK 2 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT RUN SPARK M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT RUNNER F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT RUNNER M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT RUNNER MC 2.0 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT RUNNER MC 2.0 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT SPARK  M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT SPARK 2 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT SPARK 2 MES M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT SPARK MESCL M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "T-SHIRT SPORTWEAR M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "TSHIRT STAMP 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "T-SHIRT ULTRA M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "TURINO STACKED GLITTER"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "UA CHARGED GREAT F"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "UA CHARGED GREAT M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "UA DAGGER M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "UA PACER U"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "ULTRA FLEX 2.0 F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "ULTRA FLEX 3.0 BRILLIANT PATH F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ULTRABOOST 5 F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ULTRABOOST 5 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ULTRABOUNCE F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "ULTRABOUNCE M"
+  },
+  {
+    "brand": "USO/CONSUMO",
+    "group": "UNIFORME"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "UP F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "URANO F"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN 3 U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN BACK U"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "URBAN COURT F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "URBAN COURT M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN ESSENCE U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN FLOW U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN FREE U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN JOACA U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN KILLIAN U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN ONE U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN PULSE 2 U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN PULSE JR EASY U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN REVERSE U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN SMASH JR EASY U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN SMASH U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN SQUAD U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN STRIPE 3 U"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "URBAN VERSA U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "URBANO AST U"
+  },
+  {
+    "brand": "USO/CONSUMO",
+    "group": "USO/CONSUMO (USO DIRETO)"
+  },
+  {
+    "brand": "FILA",
+    "group": "V.TRACK 3.0 F"
+  },
+  {
+    "brand": "FILA",
+    "group": "V.TRACK 3.0 M"
+  },
+  {
+    "brand": "FILA",
+    "group": "VECTOR F"
+  },
+  {
+    "brand": "FILA",
+    "group": "VECTOR M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "VELOCITI DISTANCE M"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "VELOCITI PRO 2 U"
+  },
+  {
+    "brand": "UNDER ARMOUR",
+    "group": "VELOCITI SPD F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VELOZ 3 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VELOZ 3 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VELOZ 4 U"
+  },
+  {
+    "brand": "ECKO",
+    "group": "VENICE U"
+  },
+  {
+    "brand": "FILA",
+    "group": "VENTURE TRACER F"
+  },
+  {
+    "brand": "FILA",
+    "group": "VENTURE TRACER M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VENUM M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VENUS 2 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VENUS 3 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VERSA F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VERSA M"
+  },
+  {
+    "brand": "ASICS",
+    "group": "VERSABLAST 4 F"
+  },
+  {
+    "brand": "ASICS",
+    "group": "VERSABLAST 4 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VERTICAL U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VERTICE F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VEST F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "VIBE II CAMPO"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VIBE U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VIBRA U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VIBRAÇÃO U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "VICTORY RSP F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "VICTORY RSP M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "VIRTUE 2 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "VIRTUE F"
+  },
+  {
+    "brand": "FILA",
+    "group": "VIRTUOUS F"
+  },
+  {
+    "brand": "FILA",
+    "group": "VIRTUOUS M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VISEIRA AERO U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VISEIRA RUN U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "VITALITY F"
+  },
+  {
+    "brand": "PUMA",
+    "group": "VIZ RUNNER BDP M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "VIZ RUNNER V2 BDP M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "VL COURT 3.0 F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "VL COURT 3.0 M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "VL COURT BASE F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "VL COURT BASE M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "VL COURT BASE U"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "VL COURT BOLD F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "VL COURT M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VOA 2 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VOA 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VOA 3 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VOA M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VOLCAN 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VOLCAN F"
+  },
+  {
+    "brand": "FILA",
+    "group": "VOLT M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VOLTA 2 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "VOLTA M"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "VS PACE 2.0 M"
+  },
+  {
+    "brand": "LYND",
+    "group": "VULCAN F"
+  },
+  {
+    "brand": "SKECHERS",
+    "group": "WALKER 2.0-NEON SITES F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "WARSKIN FUTSAL KIDS"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "WARSKIN SOCIETY KIDS"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE CREATION 24 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE CREATION 25 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE CREATION 25 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE CREATION 25 SE F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE CREATION 25 SE M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE CREATION 26 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE CREATION 26 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE DYNASTY 5 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE DYNASTY 5 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE DYNASTY 6 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE DYNASTY 6 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE DYNASTY 7 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE DYNASTY 7 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE DYNASTY 8 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE DYNASTY 8 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE ENDEAVOR 2 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE ENDEAVOR 2 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE ENDEAVOR 3 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE ENDEAVOR 3 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE ENDEAVOR F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE FALCON 5 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE FALCON 5 M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "WAVE FRONTIER 14 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE FRONTIER 15 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE FRONTIER 15 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE HAWK 4 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE HAWK 4 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE IMPETUS F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE IMPETUS M"
+  },
+  {
+    "brand": "PUMA",
+    "group": "WAVE INVICTUS 3 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE INVICTUS 4 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE INVICTUS 4 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE LEGEND 3 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE LEGEND 3 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE LEGEND 4 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE LEGEND 4 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE LEGEND 5 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE LEGEND 5 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE MIRAI 5 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE MIRAI 5 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE MIRAI 6 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE MIRAI 6 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE MIRAI 7 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE MIRAI 7 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE MIRAI 8 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE MIRAI 8 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE PROPHECY 1 SPORTSTYLE U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE PROPHECY 12 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE PROPHECY 13 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE PROPHECY 13 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE PROPHECY 14 U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE PROPHECY 15 SE U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE PROPHECY 15 U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE REBELLION FLASH 2 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE RIDER 27 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE RIDER 27 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE RIDER 27 SSW M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE RIDER 28 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE RIDER 28 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE RIDER 29 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE RIDER 29 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE RIDER 30 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE RIDER 30 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE SKY 8 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE SKY 8 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE SKY 9 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE SKYRISE 4 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE SKYWAY F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE SKYWAY M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE STRATOS 2 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE STRATOS 2 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE STRATOS 3 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE STRATOS 3 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE STRATOS 4 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE STRATOS F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE STRATOS LS U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE STRATOS M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE SUPERFAST RSP M"
+  },
+  {
+    "brand": "MORMAII",
+    "group": "WAVE U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE VITALITY 5 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE VITALITY 5 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE VITALITY 6 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE VITALITY 6 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE VITALITY 7 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE VITALITY 7 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE VITALITY 8 U"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE WAY 3 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE WAY 4 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE WAY 4 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE ZEST 2 F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE ZEST 2 M"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE ZEST F"
+  },
+  {
+    "brand": "MIZUNO",
+    "group": "WAVE ZEST M"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "WC AUSTIN U"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "WC BALBOA 2 U"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "WC DENVER U"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "WC DETROIT U"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "WC FREEDOM M"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "WC HORIZON U"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "WC MALIBU"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "WC SILVER M"
+  },
+  {
+    "brand": "WEST COAST",
+    "group": "WC SUNSET M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "WELLNESS 2 F"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "WELLNESS 2 M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "WELLNESS 3 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "WELLNESS M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "WIRED  M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "WIRED RUN BDP F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "WIRED RUN BDP M"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "WIRED RUN SLIPON BDP F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "WIRED RUN SLIPON PS BDP KIDS"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "X PLRPATH F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "X RAY 2 SQUARE BDP F"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "X RAY AC PS BDP KIDS"
+  },
+  {
+    "brand": "UMBRO",
+    "group": "X RAY GAME F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "X_PLRPHASE F"
+  },
+  {
+    "brand": "ADIDAS",
+    "group": "X_PLRPULSE F"
+  },
+  {
+    "brand": "LYND",
+    "group": "XTREMO 2 U"
+  },
+  {
+    "brand": "LYND",
+    "group": "Y98 M"
+  },
+  {
+    "brand": "LYND",
+    "group": "Y-FLASH F"
+  },
+  {
+    "brand": "LYND",
+    "group": "Y-FLASH M"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ZEX 2 U"
+  },
+  {
+    "brand": "OLYMPIKUS",
+    "group": "ZEX M"
+  }
+]
